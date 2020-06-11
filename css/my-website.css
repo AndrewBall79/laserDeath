@@ -1,0 +1,460 @@
+body{
+    height: 100%;
+    background: black;
+    /*background: linear-gradient(rgba(100, 100, 137, .5), rgba(100,100,137, 1));*/
+    margin: 0;
+}
+#main-jumbotron {
+    /*background-image: url("../images/my-website/WatercolorSkull.jpg");*/
+    /*background: center;*/
+    background: linear-gradient(#3B94D9,rgba(100, 100, 137, .7));
+    height: 34vh;
+    display: flex;
+    width: 100%;
+}
+#main-jumbotron1 {
+    height: 38vh;
+    display: flex;
+}
+
+#jumbotron-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px;
+}
+
+/*.embed-responsive .card-img-top {*/
+/*    object-fit: cover;*/
+/*}*/
+
+.top-name{
+    font-family: "Heiti SC", sans-serif;
+    display: flex;
+    color: silver;
+    justify-content: center;
+    align-items: center;
+    text-shadow: black 2px 2px 5px;
+}
+
+
+.forefront-element{
+    /*font-family: 'Expletus Sans', cursive;*/
+    font-family: "Heiti SC", sans-serif;
+    box-shadow: 2px 2px 5px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: black 2px 2px 5px;
+    /*background: linear-gradient(rgba(100, 100, 137, .5),rgba(100, 100, 137, 1));*/
+    background: rgba(100,100,100,.3);
+    color: ghostwhite;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    height: 40px;
+}
+.lead {
+    text-transform: uppercase;
+    display: flex;
+    /*font-family: 'Expletus Sans', cursive;*/
+    font-family: "Heiti SC", sans-serif;
+    color: silver;
+    justify-content: center;
+    text-shadow: black 2px 2px 5px;
+}
+
+
+.sm-banner{
+    background: linear-gradient(#3B94D9,rgba(100, 100, 100, .7));
+
+}
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 18px;
+}
+
+.prismGrid{
+    position: relative;
+    max-width: 600px;
+    display: grid;
+    height: 38vh;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 60% 60%;
+    grid-template-areas:
+                "prism1 prism2 prism3"
+                "prism4 prism5 prism6";
+
+}
+.prismGridBk{
+    position: absolute;
+    width: 100%;
+    height: 38vh;
+    border: 10px rgba(100,100,100, .6) solid;
+    background-color: silver;
+    -webkit-animation:prismAni 2s infinite  ;
+    -moz-animation:prismAni 2s infinite  ;
+    animation: prismAni 2s infinite  ;
+}
+@keyframes prismAni {
+    0%   {background-color: rgba(100,100,100, .3);}
+    10%   {background-color: black;}
+    20%  {background-color: rgba(100,100,100, .5);}
+    40%   {background-color: black;}
+    60%  {background-color: rgba(100,100,100, .3);}
+    70%   {background-color: black;}
+    75%  {background-color: rgba(100,100,100, .5);}
+    80%   {background-color: black;}
+    90%  {background-color: rgba(100,100,100, .3);}
+    95%   {background-color: black;}
+    98%  {background-color: rgba(100,100,100, .3);}
+    100%  {background-color: black;}
+    0% {clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);}
+    40% {clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);}
+    60% {clip-path: polygon(0% 0%, 100% 0%, 0% 100%, 100% 100%);}
+    70% {clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);}
+    100% {clip-path: polygon(-100% 0%, 200% 0%, -100% 100%, 200% 100%);}
+
+
+}
+.prismWrap{
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+    border: 5px black;
+
+}
+.b1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: prism1;
+    background: lightgray;
+    height: 100px;
+    width: 200px;
+    clip-path: polygon(17% 0, 69% 18%, 100% 100%, 22% 50%);
+    -webkit-animation:spin1 .8s linear reverse;
+    -moz-animation:spin1 .6s linear reverse;
+    animation:spin1 .6s linear reverse;
+}
+@-moz-keyframes spin1 { 100% { -moz-transform: rotate(45deg); } }
+@-webkit-keyframes spin1 { 100% { -webkit-transform: rotate(45deg); } }
+@keyframes spin1 { 100% { -webkit-transform: rotate(45deg); transform:rotate(45deg); } }
+.b1a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: prism1;
+    background: lightgray;
+    height: 100px;
+    width: 200px;
+    clip-path: polygon(17% 0, 69% 18%, 100% 100%, 22% 50%);
+    -webkit-animation:spin1 .8s linear normal;
+    -moz-animation:spin1 .6s linear normal;
+    animation:spin1 .6s linear normal;
+}
+@-moz-keyframes spin1 { 100% { -moz-transform: rotate(45deg); } }
+@-webkit-keyframes spin1 { 100% { -webkit-transform: rotate(45deg); } }
+@keyframes spin1 { 100% { -webkit-transform: rotate(45deg); transform:rotate(45deg); } }
+
+.prismWrap2{
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+}
+
+.b2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: prism2;
+    background: lightgray;
+    color: silver;
+    height: 100px;
+    width: 90px;
+    clip-path: polygon(50% 100%, 20% 38%, 50% 0, 80% 38%);
+}
+.b2a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: prism2;
+    background: lightgray;
+    color: darkgrey;
+    height: 100px;
+    width: 90px;
+    -webkit-animation:polygon2 2s forwards  ;
+    -moz-animation:polygon2 2s forwards  ;
+    animation: polygon2 2s forwards  ;
+}
+@keyframes polygon2 {
+    0%   {background-color: lightgrey;}
+    50%   {background-color: red;}
+    100%  {background-color: lightgrey;}
+    0% {clip-path: polygon(50% 100%, 20% 38%, 50% 0, 80% 38%);}
+    50% {clip-path: polygon(50% 50%, 50% 50%, 50% 500%, 50% 50%);}
+    100% {clip-path:polygon(50% 50%, 0% 100%, 50% 0, 100% 100%);}
+    100% { height: 120px; width: 150px;}
+}
+@-webkit-keyframes polygon2 {
+    0%   {background-color: lightgrey;}
+    50%   {background-color: red;}
+    100%  {background-color: lightgrey;}
+    0% {clip-path: polygon(50% 100%, 20% 38%, 50% 0, 80% 38%);}
+    50% {clip-path: polygon(50% 50%, 50% 50%, 50% 500%, 50% 50%);}
+    100% {clip-path:polygon(50% 50%, 0% 100%, 50% 0, 100% 100%);}
+}
+@-moz-keyframes polygon2 {
+    0%   {background-color: lightgrey;}
+    50%   {background-color: red;}
+    100%  {background-color: lightgrey;}
+    0% {clip-path: polygon(50% 100%, 20% 38%, 50% 0, 80% 38%);}
+    50% {clip-path: polygon(50% 50%, 50% 50%, 50% 500%, 50% 50%);}
+    100% {clip-path:polygon(50% 50%, 0% 100%, 50% 0, 100% 100%);}
+}
+
+.prismWrap3{
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+}
+.b3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: prism3;
+    background: lightgray;
+    color: silver;
+    height: 100px;
+    width: 200px;
+    clip-path: polygon(23% 10%, 62% 2%, 65% 50%, 0% 100%);
+    -webkit-animation:spin3 .6s linear reverse;
+    -moz-animation:spin3 .6s linear reverse;
+    animation:spin3 .6s linear reverse;
+}
+@-moz-keyframes spin3 { 100% { -moz-transform: rotate(-45deg); } }
+@-webkit-keyframes spin3 { 100% { -webkit-transform: rotate(-45deg); } }
+@keyframes spin3 { 100% { -webkit-transform: rotate(-45deg); transform:rotate(-45deg); } }
+
+
+
+.prismWrap4{
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+    border: 5px black;
+
+}
+.b4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: prism4;
+    background: lightgray;
+    height: 100px;
+    width: 200px;
+    clip-path: polygon(17% 100%, 30% 45%, 100% 0, 62% 77%);
+    -webkit-animation:spin4 .6s linear reverse;
+    -moz-animation:spin4 .6s linear reverse;
+    animation:spin4 .6s linear reverse;
+}
+@-moz-keyframes spin4 { 100% { -moz-transform: rotate(-45deg); } }
+@-webkit-keyframes spin4 { 100% { -webkit-transform: rotate(-45deg); } }
+@keyframes spin4 { 100% { -webkit-transform: rotate(-45deg); transform:rotate(-45deg); } }
+.b4A{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: prism6;
+    background: rgb(120,0,0);
+    height: 100px;
+    width: 200px;
+    -webkit-animation:polygon4 2s forwards  ;
+    -moz-animation:polygon4 2s forwards  ;
+    animation: polygon4 2s forwards  ;
+}
+@keyframes polygon4 {
+    100% {clip-path: polygon(0 0, 60% 45%, 100% 0, 62% 77%);}
+}
+.PW5{
+    -webkit-animation:PS5 3s linear forwards;
+    -moz-animation:PS5 3s linear forwards;
+    animation:PS5 3s linear forwards;
+}
+@-moz-keyframes PS5 {
+    0% {filter: drop-shadow(0px 0px 0px whitesmoke);}
+    50% {filter: drop-shadow(0px 6px 10px whitesmoke);}
+    100% {filter: drop-shadow(0px 0px 0px whitesmoke);}}
+
+@-webkit-keyframes PS5 {
+    0% {filter: drop-shadow(0px 0px 0px whitesmoke);}
+    50% {filter: drop-shadow(0px 6px 10px whitesmoke);}
+    100% {filter: drop-shadow(0px 0px 0px whitesmoke);}}
+@keyframes PS5 {
+    0% {filter: drop-shadow(0px 0px 0px whitesmoke);}
+    50% {filter: drop-shadow(0px 6px 10px whitesmoke);}
+    100% {filter: drop-shadow(0px 0px 0px whitesmoke);}}
+
+.b5{
+    align-items: center;
+    justify-content: center;
+    grid-area: prism5;
+    background: lightgray;
+    height: 100px;
+    width: 90px;
+    clip-path: polygon(50% 100%, 24% 63%, 50% 0, 76% 63%);
+}
+.b5a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: prism5;
+    background: grey;
+    height: 100px;
+    width: 100px;
+    -webkit-animation:spin5 3s linear forwards;
+    -moz-animation:spin5 3s linear forwards;
+    animation:spin5 3s linear forwards;
+}
+
+@-moz-keyframes spin5 {
+    0%   {background-color: lightgrey;}
+    50%   {background-color: blue;}
+    100%  {background-color: lightgrey;}
+    50% {box-shadow: 2px 2px 5px #DDDDDD}
+    100%  {height: 200px; width: 200px;}
+
+    50% {clip-path:polygon(50% 50%, 0% 100%, 50% 0, 100% 100%);}
+    100% {clip-path:polygon(50% 50%, 25% 50%, 50% 100%, 75% 50%);}
+    100% { -moz-transform: rotate(180deg);}
+}
+@-webkit-keyframes spin5 {
+    0%   {background-color: lightgrey;}
+    50%   {background-color: blue;}
+    100%  {background-color: lightgrey;}
+    50% {box-shadow: 2px 2px 5px #DDDDDD}
+    50% {clip-path:polygon(50% 50%, 0% 100%, 50% 0, 100% 100%);}
+    100% {clip-path:polygon(50% 50%, 25% 50%, 50% 100%, 75% 50%);}
+    100% { -webkit-transform: rotate(180deg);}
+}
+@keyframes spin5 {
+    0%   {background-color: lightgrey;}
+    50%   {background-color: blue;}
+    100%  {background-color: lightgrey;}
+    50% {box-shadow: 2px 2px 5px #DDDDDD}
+    50% {clip-path:polygon(50% 50%, 0% 100%, 50% 0, 100% 100%);}
+    100% {clip-path:polygon(50% 50%, 25% 50%, 50% 100%, 75% 50%);}
+    100% { -webkit-transform: rotate(180deg); transform:rotate(180deg);}
+}
+
+
+.prismWrap6{
+}
+.b6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: prism6;
+    background: lightgray;
+    height: 100px;
+    width: 200px;
+    clip-path: polygon(0 0, 76% 44%, 89% 100%, 33% 79%);
+    -webkit-animation:spin6 .6s linear reverse;
+    -moz-animation:spin6 .6s linear reverse;
+    animation:spin6 .6s linear reverse;
+}
+@-moz-keyframes spin6 {
+    100% { -moz-transform: rotate(45deg); } }
+@-webkit-keyframes spin6 {
+    100% { -webkit-transform: rotate(45deg); } }
+@keyframes spin6 {
+    100% { -webkit-transform: rotate(45deg); transform:rotate(45deg); } }
+
+.b6a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: prism6;
+    background: rgb(120,0,0);
+    height: 100px;
+    width: 200px;
+    -webkit-animation:polygon6 2s forwards  ;
+    -moz-animation:polygon6 2s forwards  ;
+    animation: polygon6 2s forwards  ;
+}
+@keyframes polygon6 {
+    0% {clip-path: polygon(0 0, 76% 44%, 89% 100%, 33% 79%);}
+    100% {clip-path: polygon(0 0, 30% 40%, 89% 0%, 33% 79%);}
+}
+.bg {
+    background: linear-gradient(rgba(150, 150, 150, .7),rgba(100, 100, 137, .7));
+
+}
+.navbar{
+    background: lightgrey;
+}
+.main-contain{
+    display: flex;
+    justify-content: center;
+    background: lightslategrey;
+    /*border: 2px whitesmoke solid;*/
+    border-radius: 4px;
+    padding: 30px
+}
+.card-grid{
+    margin-top: 30px;
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+                "card1 card2";
+}
+.card1{
+    grid-area: card1;
+    display: flex;
+    justify-content: center;
+}
+
+.card2{
+    grid-area: card2;
+    display: flex;
+    justify-content: center;
+}
+
+.imgSkull{
+    position: absolute;
+}
+
+.skullVoda{
+    z-index: 0;
+    font-size: 100px;
+    color: rgba(100,100,100, .3);
+    margin: 0;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    margin:-60px 0 0 -60px;
+    -webkit-animation:spin 3s linear normal;
+    -moz-animation:spin 3s linear normal;
+    animation:spin 3s linear normal;
+}
+@-moz-keyframes spin {
+    90% { -moz-transform: rotate(370deg); }
+    100% { -moz-transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+    90% { -webkit-transform: rotate(370deg); }
+    100% { -webkit-transform: rotate(360deg); }
+
+}
+@keyframes spin {
+    90% { -webkit-transform: rotate(370deg); transform:rotate(370deg); }
+    100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
+
+}
+
