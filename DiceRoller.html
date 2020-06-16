@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/DiceRoller.css">
+    <script src="js/DiceRoller.js"></script>
+
+    <title>Dice Roller</title>
+</head>
+<body>
+<br>
+<div class="container main-page">
+    <h1 id="main-header1" class="inferno">DR&CG</h1>
+
+    <h2 id="main-header">ROLL SOME DICE and GET SOME COLOR</h2>
+    <button id='button' class="roller">ROLL THE DICE</button>
+    <audio id="dice">
+        <source src="audio/dice.mp3" type="audio/mp3">
+    </audio>
+    <br>
+    <div class="containerGrid border" id="container-Grid">
+        <div class="container1 box1 darkblue"></div>
+        <div class="container1 box2 blue"></div>
+        <div class="container1 box3 royalblue"></div>
+        <div class="container1 box4 dodgerblue"></div>
+        <div class="container1 box5 lightskyblue"></div>
+        <div class="container1 box6 darkgreen"></div>
+        <div class="container1 box7 green"></div>
+        <div class="container1 box8 yellowgreen"></div>
+        <div class="container1 box9 greenyellow"></div>
+        <div class="container1 box10 palegreen"></div>
+        <div class="container1 box11 darkred"></div>
+        <div class="container1 box12 firebrick"></div>
+        <div class="container1 box13 red"></div>
+        <div class="container1 box14 darkorange"></div>
+        <div class="container1 box15 orange"></div>
+        <div class="container1 box16 black"></div>
+        <div class="container1 box17 grey" id="boox"></div>
+        <div class="container1 box18 darkgrey"></div>
+        <div class="container1 box19 lightgrey"></div>
+        <div class="container1 box20 whitesmoke"></div>
+    </div>
+
+    <br>
+
+    <!--//roll the dice pick a dice to roll-->
+
+    <form class="rollDieFunction border" method="post">
+        <label for="mySelect" class="border competent">CHOOSE A DIE TO ROLL</label>
+        <br>
+        <select id="mySelect" onclick="">
+            <option class="tetrahedron" value="4">Tetrahedron</option>
+            <option class="rollDie" value="6">Six Sided Die</option>
+            <option class="7sided" value="7">Seven Sided Die</option>
+            <option class="8sided" value="8">Eight Sided Die</option>
+            <option class="10sided" value="10">Ten Sided Die</option>
+            <option class="twoDice" value="12">Two Six Sided Dice</option>
+            <option class="TwentySidedDie" value="20">Twenty Sided Die</option>
+        </select>
+
+        <br>
+
+        <label for="mySelect2" class="competent border">HOW MANY TIMES DO YOU WANT TO ROLL?</label>
+        <br>
+        <select id="mySelect2">
+            <option class="numberOfRolls" value="1">1</option>
+            <option class="numberOfRolls" value="2">2</option>
+            <option class="numberOfRolls" value="3">3</option>
+            <option class="numberOfRolls" value="4">4</option>
+            <option class="numberOfRolls" value="5">5</option>
+            <option class="numberOfRolls" value="6">6</option>
+        </select>
+
+        <br>
+    </form>
+</div>
+<br>
+<br>
+<script src="JS/jquery-2.2.4.js"></script>
+
+<script>
+
+
+    "use strict";
+
+
+    (function () {
+
+        var mainHeader = document.getElementById("main-header");
+        var listener = function (event) {
+            mainHeader.innerText = listOfRollsFromDieFunc();
+        };
+        document.getElementById('button').addEventListener('click', listener, false);
+
+
+        //this will eventually do something with the grid, hopefully
+
+
+        // dice shaker dice shaker audio
+
+        var box = document.getElementById("boox");
+        var grid = function (event) {
+            box.id = "boox" + mainHeader.innerText;
+            $('audio#dice')[0].play();
+            // console.log(box.id);
+        };
+        document.getElementById('button').addEventListener('click', grid, false);
+
+// changes the main background of main-header1 when dice are rolled
+
+
+        $('#button').click(function () {
+            var boxDiv = 'box' + mainHeader.innerText;
+            var color = $(boxDiv).css("background-color");
+            $('#main-header1').css('background', color);
+            console.log(color);
+        });
+
+
+// gets the individual divs to send their colors to the header
+
+
+        $(".container1").click(function () {
+            var color = $(this).css("background-color");
+            $("#main-header1").css('background', color);
+            console.log(color);
+        });
+
+
+        //changes font size of the font to be more visible after cli
+
+        $("#button").click(function () {
+            $("#main-header").css({"font-size": "40px", 'margin': "8px"});
+        });
+
+
+        //the dice roll function in a nutshell
+
+        var numberOfRolls = document.getElementById('mySelect2');
+        // console.log(numberOfRolls);
+        var diceFunction = document.getElementById('mySelect');
+
+        // console.log(diceFunction);
+        function listOfRollsFromDieFunc() {
+            var dieChosen = diceFunction.value;
+            // console.log(dieChosen);
+            var rollAmount = numberOfRolls.value;
+            // console.log(rollAmount);
+            var diceArray = [];
+            for (var i = 0; i < rollAmount; i++) {
+                diceArray.push(Math.floor(Math.random() * dieChosen) + 1);
+                console.log(diceArray)
+            }
+            // console.log(diceArray);
+            return diceArray
+        }
+    })();
+
+
+    //some jQuery styling to use or not to use
+
+    $('.border').css({
+        'border': '1px solid #F00',
+        'font-family': 'helvetica',
+        'border-radius': '4px',
+        'padding': '6px',
+        'box-shadow': '0px 0px 5px goldenrod'
+    });
+    $('.underestimate').css({'color': 'white', 'background-color': 'grey'});
+    $('.important').css({'background-color': 'darkgrey', 'font-size': '25px', 'font-family': 'century'});
+    $('.codeup').css('border', '4px solid red');
+    $('.inferno').css({'background': 'red', 'color': 'white', 'width': '100%', 'box-shadow': '-2px -2px 5px grey'});
+    $('.competent').css({'width': '98%', 'background': 'goldenrod', 'padding': '4px'});
+
+
+    // this is the main-header1 roll over dice and the color swap
+
+
+    $('#main-header1').hover(
+        function () {
+            $('audio#dice')[0].play();
+
+            $(this).css({'color': 'goldenrod'});
+            // $(this).css()
+        },
+        function () {
+            $(this).css('color', 'white');
+        }
+    );
+    $('#main-header').hover(
+        function () {
+            $(this).css('color', 'goldenrod');
+            $(this).fadeIn(200);
+
+            // $(this).css()
+        },
+        function () {
+            $(this).css('color', 'white');
+        }
+    );
+
+    // container rollover animation
+
+    $(".container1").hover(function () {
+        $(this).fadeOut(100);
+        $(this).fadeIn(500);
+    });
+
+
+</script>
+
+
+</body>
+</html>
