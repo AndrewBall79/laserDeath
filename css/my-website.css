@@ -390,30 +390,32 @@ p {
     display: flex;
     justify-content: center;
     background: lightslategrey;
+    color: black;
+    font-size: 40px;
     /*border: 2px whitesmoke solid;*/
     border-radius: 4px;
-    padding: 30px
+    padding: 10px
 }
-.card-grid{
-    margin-top: 30px;
-    display: grid;
-    column-gap: 10px;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas:
-                "card1 card2";
-}
-.card1{
-    grid-area: card1;
-    display: flex;
-    justify-content: center;
-}
+/*.card-grid{*/
+/*    margin-top: 30px;*/
+/*    display: grid;*/
+/*    column-gap: 10px;*/
+/*    grid-template-columns: 50% 50%;*/
+/*    grid-template-rows: 50% 50%;*/
+/*    grid-template-areas:*/
+/*                "card1 card2";*/
+/*}*/
+/*.card1{*/
+/*    grid-area: card1;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
 
-.card2{
-    grid-area: card2;
-    display: flex;
-    justify-content: center;
-}
+/*.card2{*/
+/*    grid-area: card2;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
 
 .imgSkull{
     position: absolute;
@@ -428,6 +430,7 @@ p {
     top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 120%;
 }
 
 .image {
