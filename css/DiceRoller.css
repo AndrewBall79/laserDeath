@@ -3,6 +3,7 @@ body{
 }
 
 
+
 .main-page{
     font-family: Helvetica, sans-serif;
     color: ghostwhite;
@@ -22,6 +23,24 @@ body{
     font-family: Copperplate, sans-serif;
     display: flex;
     justify-content: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-areas: 'left center right';
+}
+.left{
+    display: grid;
+    grid-area: left;
+}
+.center{
+    display: grid;
+    grid-area: center;
+}
+.right{
+    display: grid;
+    grid-area: right;
 }
 
 .containerGrid {
@@ -324,3 +343,4 @@ body{
     justify-content: center;
     align-items: center;
 }
+

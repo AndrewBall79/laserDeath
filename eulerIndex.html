@@ -1,0 +1,117 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+
+<!--&lt;!&ndash;<html xmlns:th="http://www.thymeleaf.org">&ndash;&gt;-->
+<!--<head>-->
+<!--    &lt;!&ndash;    <th:block th:insert="fragments/invisibleElements :: head"></th:block>&ndash;&gt;-->
+<!--    &lt;!&ndash;    <title>Landing Page</title>&ndash;&gt;-->
+<!--    <link rel="stylesheet" href="css/mainCSS.css">-->
+<!--</head>-->
+<!--<body>-->
+
+<!--&lt;!&ndash;navbar elements&ndash;&gt;-->
+<!--<button class="navbar-toggler navbar-inverse" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"-->
+<!--        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--    <span class="navbar-toggler-icon"></span>-->
+<!--</button>-->
+
+<!--<div class="collapse navbar-collapse justify-content-end navbar-inverse" id="navbarSupportedContent">-->
+<!--    <ul class="navbar-nav align-items-center">-->
+<!--        &lt;!&ndash;        <li th:href="@{/home}">Home&ndash;&gt;-->
+<!--        &lt;!&ndash;        </li>&ndash;&gt;-->
+<!--        <li class="nav-item active">-->
+<!--            <a href="/catalog">Gallery</a>-->
+<!--        </li>-->
+<!--        <li type="button" class="btn btn-primary" data-toggle="modal" data-target="#navBarModal">-->
+<!--            Launch demo modal-->
+<!--        </li>-->
+
+<!--    </ul>-->
+<!--</div>-->
+<!--&lt;!&ndash; Modal &ndash;&gt;-->
+<!--<div class="modal fade" id="navBarModal" tabindex="-1" role="dialog" aria-labelledby="navBarModalLabel"-->
+<!--     aria-hidden="true">-->
+<!--    <div class="modal-dialog" role="document">-->
+<!--        <div class="modal-content">-->
+<!--            <div class="modal-header">-->
+<!--                <h5 class="modal-title" id="navBarModalLabel">Modal title</h5>-->
+<!--                <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                    <span aria-hidden="true">&times;</span>-->
+<!--                </button>-->
+<!--            </div>-->
+<!--            <div class="modal-body">-->
+<!--                Nav Bar Modal-->
+<!--            </div>-->
+<!--            <div class="modal-footer">-->
+<!--                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+<!--                <button type="button" class="btn btn-primary">Save changes</button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--</li>-->
+<!--</nav>-->
+<!--&lt;!&ndash;<nav th:replace="fragments/visibleElements :: Nav"></nav>&ndash;&gt;-->
+
+
+<!--<div class="horizontal-container">-->
+<!--    <p class="headline">DESIGN AM</p>-->
+<!--    <div class="FrontPage">-->
+<!--        <div class="box1 align-self-start"></div>-->
+<!--        <div class="box2"></div>-->
+<!--        <div class="box3"></div>-->
+<!--        <div class="box4"></div>-->
+<!--    </div>-->
+<!--    <div class="Gallery">Gallery-->
+<!--        &lt;!&ndash; Button trigger modal &ndash;&gt;-->
+<!--        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#artModal">-->
+<!--            Modal Will Contain all art information including purchasing.-->
+<!--        </button>-->
+
+<!--        &lt;!&ndash; Modal &ndash;&gt;-->
+<!--        <div class="modal fade" id="artModal" tabindex="-1" role="dialog" aria-labelledby="artModalLabel"-->
+<!--             aria-hidden="true">-->
+<!--            <div class="modal-dialog" role="document">-->
+<!--                <div class="modal-content">-->
+<!--                    <div class="modal-header">-->
+<!--                        <h5 class="modal-title" id="artModalLabel">Modal title</h5>-->
+<!--                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                            <span aria-hidden="true">&times;</span>-->
+<!--                        </button>-->
+<!--                    </div>-->
+<!--                    <div class="modal-body">-->
+<!--                        modal-->
+<!--                    </div>-->
+<!--                    <div class="modal-footer">-->
+<!--                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+<!--                        <button type="button" class="btn btn-primary">Save changes</button>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="MissingPage">Missing</div>-->
+<!--    <div class="AboutPage">About Page</div>-->
+<!--</div>-->
+
+
+<!--&lt;!&ndash;javascript&ndash;&gt;-->
+<!--&lt;!&ndash;<th:block th:insert="fragments/invisibleElements :: JavaScript"></th:block>&ndash;&gt;-->
+<!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"-->
+<!--        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"-->
+<!--        crossorigin="anonymous"></script>-->
+<!--&lt;!&ndash; Latest compiled and minified CSS &ndash;&gt;-->
+<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"-->
+<!--      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">-->
+
+<!--&lt;!&ndash; Optional theme &ndash;&gt;-->
+<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"-->
+<!--      integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">-->
+
+<!--&lt;!&ndash; Latest compiled and minified JavaScript &ndash;&gt;-->
+<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"-->
+<!--        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"-->
+<!--        crossorigin="anonymous"></script>-->
+<!--<script src="/js/myJS.js" type="text/javascript"></script>-->
+<!--</body>-->
+<!--</html>-->

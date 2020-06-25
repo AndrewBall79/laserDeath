@@ -1,0 +1,97 @@
+body{
+    background-color: black;
+}
+
+.outer-container{
+    width: 100vh;
+    height: 100vw;
+    transform-origin: top left;
+    overflow-y: scroll ;
+    overflow-x: hidden;
+    position: fixed;
+}
+
+.horizontal-container{
+    display: flex;
+    flex-direction: row;
+    width: 800vw;
+    transform-origin: top left;
+    margin: 0;
+    background-color: black;
+}
+
+.headline{
+    color: white;
+    font-size: 80px;
+    font-family: "Heiti SC";
+    position: sticky;
+    left: 50%;
+    top :50%;
+    z-index: 10;
+}
+
+.container{
+    margin: 0;
+    width: 100%;
+}
+.FrontPage{
+    height: 90vh;
+    width: 200vw;
+    background: grey;
+}
+
+.Gallery{
+    height: 90vh;
+    width: 200vw;
+    background: dimgrey;
+}
+.MissingPage{
+    height: 90vh;
+    width: 200vw;
+    background: grey;
+}
+.AboutPage{
+    height: 90vh;
+    width: 200vw;
+    background: dimgrey;
+}
+
+.box1{
+    position: absolute;
+    background-color: turquoise;
+    width: 100%;
+    z-index: 9;
+    height: 33px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.box2{
+    position: absolute;
+    background-color: dimgrey;
+    height: 40px;
+    width: 200%;
+    top: 25%;
+    left: 0%;
+    box-shadow: 2px 2px 5px black;
+}
+
+.box3{
+    position: absolute;
+    background-color: dimgrey;
+    z-index: 11;
+    height: 40px;
+    width: 150%;
+    top: 23%;
+    left: 80%;
+    box-shadow: 2px 2px 5px black;
+}
+.box4{
+    position: absolute;
+    background-color: palegreen;
+    z-index: 11;
+    height: 40px;
+    width: 150%;
+    top: 40%;
+    left: 80%;
+    box-shadow: 2px 2px 5px black;
+}
