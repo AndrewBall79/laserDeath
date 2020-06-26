@@ -1,12 +1,9 @@
 body{
     height: 100%;
     background: black;
-    /*background: linear-gradient(rgba(100, 100, 137, .5), rgba(100,100,137, 1));*/
     margin: 0;
 }
 #main-jumbotron {
-    /*background-image: url("../images/my-website/WatercolorSkull.jpg");*/
-    /*background: center;*/
     background: linear-gradient(#3B94D9,rgba(100, 100, 137, .7));
     height: 34vh;
     display: flex;
@@ -24,9 +21,6 @@ body{
     height: 200px;
 }
 
-/*.embed-responsive .card-img-top {*/
-/*    object-fit: cover;*/
-/*}*/
 
 .top-name{
     font-family: "Heiti SC", sans-serif;
@@ -39,14 +33,12 @@ body{
 
 
 .forefront-element{
-    /*font-family: 'Expletus Sans', cursive;*/
     font-family: "Heiti SC", sans-serif;
     box-shadow: 2px 2px 5px black;
     display: flex;
     justify-content: center;
     align-items: center;
     text-shadow: black 2px 2px 5px;
-    /*background: linear-gradient(rgba(100, 100, 137, .5),rgba(100, 100, 137, 1));*/
     background: rgba(100,100,100,.3);
     color: ghostwhite;
     width: 100%;
@@ -57,7 +49,6 @@ body{
 .lead {
     text-transform: uppercase;
     display: flex;
-    /*font-family: 'Expletus Sans', cursive;*/
     font-family: "Heiti SC", sans-serif;
     color: silver;
     justify-content: center;
