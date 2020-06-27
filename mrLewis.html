@@ -12,7 +12,6 @@
 <body id="main">
 <div class="nav-container">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-
         <a class="navbar-brand" href="#main"><svg class="bi bi-plus-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="purple" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z"/>
             <path fill-rule="evenodd" d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z"/>
@@ -24,23 +23,22 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link" href="#about">About</a>
-                <a class="nav-item nav-link" href="#media">Media</a>
+                <a class="nav-item nav-link about-toggle" href="#about">About</a>
+                <a class="nav-item nav-link media-toggle" href="#media">Media</a>
+                <a class="nav-item nav-link player-toggle" href="#media">Player</a>
                 <a class="nav-item nav-link" href="https://store.chickenranchrecords.com/search?q=mr+lewis&options%5Bprefix%5D=last">Store</a>
             </div>
         </div>
     </nav>
 </div>
 <div class="main-page">
-    <div class="jumbotron" id="title">
+    <div class="jumbotron jumbotron-fluid" id="title">
         <h1 class="header">Mr Lewis</h1>
         <h1 class="header">&</h1>
         <h1 class="header">The Funeral 5</h1>
         <div class="sub-header" id="">Post Apocalyptic Stripper Jazz</div>
     </div>
-    <div class="image" id="img-div">
-        <img class="the-band" id="img" src="images/mrLewis/MLTF5.jpeg" alt="The Band">
-    </div>
+    <p class="about-toggle toggle">ABOUT THE BAND</p>
     <div class="about-container" data-aos="zoom-out">
         <div class="about come-in" id="about">It’s an understatement to say that the years since Mr. Lewis and The Funeral 5’s
             last album, “Delirium Tremendous” have been tough for all involved. In 2017 Greg Lewis’ estranged girlfriend
@@ -58,7 +56,7 @@
             of closure, only to leave them suspended in mid-air.
         </div>
     </div>
-    <p class="media-toggle">CLICK FOR VIDEOS</p>
+    <p class="media-toggle toggle">CLICK FOR VIDEOS</p>
     <div class="media" id="media">
         <div class="media-content">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/rzqmQZBL6kE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -68,26 +66,32 @@
         </div>
     </div>
 </div>
-<div class="player" id="player">
-    <iframe src="https://open.spotify.com/embed/artist/7FwxToVfWOwu7fKESiePud?si=jECKk1WMSaqyM-TGRFje2w" width="300"
+<div class="player-container" id="player-container">
+    <p class="player-toggle toggle-player toggle">HEAR THE BAND</p>
+    <iframe class="player-frame" src="https://open.spotify.com/embed/artist/7FwxToVfWOwu7fKESiePud?si=jECKk1WMSaqyM-TGRFje2w" width="300"
             height="200" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 </div>
 
 
 
 <!--footer-->
-<footer id="footer" class="footer navbar-dark bg-dark">
+<footer id="footer container" class="footer navbar-dark bg-dark">
+<div class="row">
+    <div class="col-sm">Links:
+        <br>
     <a class="band-links" id="tribute-link" href="https://www.youtube.com/channel/UCdb18u0yucuwlm0nSaaDikQ">Mr Lewis & The Funeral 5</a><br>
     <a class="band-links" href="https://www.youtube.com/channel/UClg0HXl1UErWjH09iZZUhXg">Chicken Ranch Records</a>
     </div>
+    <div class="col-sm">Contact:
+    </div>
+    <div class="col-sm">Reach Us:</div>
+</div>
 </footer>
+<a href="https://andrewball79.github.io/laserDeath/">Andrew Ball</a>
 
 
 
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
