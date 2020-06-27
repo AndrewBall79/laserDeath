@@ -85,7 +85,7 @@ body {
     position: -webkit-sticky;
     position: sticky;
     bottom: 2%;
-    padding-left: 60%;
+    padding-left: 70%;
 }
 
 .player-toggle{
@@ -94,16 +94,13 @@ body {
 
 .toggle-player{
     width: 200px;
-}
-
-.player{
-    background-color: whitesmoke;
-    border-radius: 4px 0px 0px 4px;
+    margin-right: 0px;
 }
 
 .player-frame{
     background: whitesmoke;
     border-radius: 4px;
+    box-shadow: 2px 2px 5px whitesmoke;
 }
 
 .come-in {
@@ -188,3 +185,42 @@ p{
 .my-link{
     font-size: 10px;
 }
+
+.header{
+    -webkit-animation:headerAni 4s infinite  ;
+    -moz-animation:headerAni 4s infinite  ;
+    animation: headerAni 4s infinite  ;
+}
+@keyframes headerAni {
+    0%   {color: rgba(100,100,100, .3);}
+    10%   {color: black;}
+    20%  {color: rgba(100,100,100, .5);}
+    40%   {color: darkgrey;}
+    60%  {color: rgba(100,100,100, .3);}
+    70%   {color: black;}
+    75%  {color: rgba(100,100,100, .5);}
+    80%   {color: black;}
+    90%  {color: rgba(100,100,100, .3);}
+    95%   {color: black;}
+    98%  {color: rgba(100,100,100, .3);}
+    100%  {color: black;}
+}
+
+.toggle-player{
+    border: 10px rgba(100,100,100, .6) solid;
+    background-color: silver;
+    -webkit-animation:prismAni 2s infinite  ;
+    -moz-animation:prismAni 2s infinite  ;
+    animation: prismAni 2s infinite  ;
+}
+@keyframes prismAni {
+    0%   {background-color: rgba(100,100,100, .3);}
+    40%   {background-color: black;}
+    70%   {background-color: black;}
+    60%  {background-color: rgba(100,100,100, .3);}
+    75%  {background-color: rgba(100,100,100, .5);}
+    80%   {background-color: black;}
+    90%  {background-color: rgba(100,100,100, .3);}
+    95%   {background-color: black;}
+}
+
