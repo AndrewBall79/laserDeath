@@ -7,21 +7,43 @@ html {
     font-family: 'Righteous', cursive;
 }
 
-body {
+#page-container {
     background: url("../images/mrLewis/MLTF5.jpeg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     text-align: center !important;
-    /*background-color: grey;*/
+
+}
+
+.regular-wrapper{
+    height: 2px;
+    width: 100vw;
+    background: red;
+    margin-bottom: 10px;
+    float:right;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-name: slideIn;
+}
+@keyframes slideIn {
+    0%   {background-color: red;}
+    40%   {background-color: white;}
+    100%   {background-color: red;}
+
+    from {
+        margin-right: -100%;
+    }
+    to {
+        margin-right: 0%;
+    }
 }
 
 .nav-container {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index: 100;
 }
 
 .jumbotron{
@@ -33,10 +55,26 @@ body {
 }
 
 .header {
-    color: lightgrey;
+    color: rgba(255, 255, 255, .2);
     font-size: 60px;
     font-family: 'Righteous', cursive;
-    text-shadow: 0px 0px 4px black;
+    -webkit-animation:headerAni 4s infinite  ;
+    -moz-animation:headerAni 4s infinite  ;
+    animation: headerAni 4s infinite  ;
+}
+@keyframes headerAni {
+    0%   {-webkit-text-stroke: 1px red;}
+    10%   {-webkit-text-stroke: 1px black;}
+    20%  {-webkit-text-stroke: 1px red;}
+    40%   {-webkit-text-stroke: 1px darkgrey;}
+    60%  {-webkit-text-stroke: 1px red;}
+    70%   {-webkit-text-stroke: 1px black;}
+    75%  {-webkit-text-stroke: 1px whitesmoke;}
+    80%   {-webkit-text-stroke:  1px black;}
+    90%  {-webkit-text-stroke: 1px red;}
+    95%   {-webkit-text-stroke:  1px black;}
+    98%  {-webkit-text-stroke: 1px red;}
+    100%  {-webkit-text-stroke: 1px black;}
 }
 
 .sub-header {
@@ -186,32 +224,12 @@ p{
     font-size: 10px;
 }
 
-.header{
-    -webkit-animation:headerAni 4s infinite  ;
-    -moz-animation:headerAni 4s infinite  ;
-    animation: headerAni 4s infinite  ;
-}
-@keyframes headerAni {
-    0%   {color: rgba(100,100,100, .3);}
-    10%   {color: black;}
-    20%  {color: rgba(100,100,100, .5);}
-    40%   {color: darkgrey;}
-    60%  {color: rgba(100,100,100, .3);}
-    70%   {color: black;}
-    75%  {color: rgba(100,100,100, .5);}
-    80%   {color: black;}
-    90%  {color: rgba(100,100,100, .3);}
-    95%   {color: black;}
-    98%  {color: rgba(100,100,100, .3);}
-    100%  {color: black;}
-}
-
 .toggle-player{
     border: 10px rgba(100,100,100, .6) solid;
     background-color: silver;
-    -webkit-animation:prismAni 2s infinite  ;
-    -moz-animation:prismAni 2s infinite  ;
-    animation: prismAni 2s infinite  ;
+    -webkit-animation:prismAni 2s normal  ;
+    -moz-animation:prismAni 2s normal  ;
+    animation: prismAni 2s normal  ;
 }
 @keyframes prismAni {
     0%   {background-color: rgba(100,100,100, .3);}
