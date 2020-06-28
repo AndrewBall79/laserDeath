@@ -1,3 +1,5 @@
+
+$(".forefront-element").click(
 function myFunction(){
     var x = document.getElementById("subH");
     if (x.innerHTML === "TO DESIGN"){
@@ -5,13 +7,22 @@ function myFunction(){
     }else{
         x.innerHTML = "TO DESIGN";
     }
-}
+});
+
+// function myFunction(){
+//     var x = document.getElementById("subH");
+//     if (x.innerHTML === "TO DESIGN"){
+//         x.innerHTML = "TO CODE";
+//     }else{
+//         x.innerHTML = "TO DESIGN";
+//     }
+// }
 
 $("#main-header");
 
 $(".prismGrid").hide();
 $(document).ready(function() {
-    $(".subheader").click(function () {
+    $(".forefront-element").click(function () {
         $(".prismGrid, #jumbotron-container").animate({
             height: "toggle",
             opacity: "toggle"
