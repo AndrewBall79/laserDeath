@@ -56,7 +56,7 @@ function matchHouses(step) {
     //changes font size of the font to be more visible after cli
 
     $("#button").click(function () {
-        $("#main-header").css({"font-size": "40px", 'margin': "8px"});
+        $(".main-header").css({"font-size": "18px"});
     });
 
 

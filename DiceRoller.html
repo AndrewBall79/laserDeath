@@ -7,7 +7,6 @@
     <title>Dice Roller</title>
 </head>
 <body>
-<br>
 <div class="container main-page">
     <div class="left">
 
@@ -15,12 +14,13 @@
     </div>
     <div class="center">
     <h1 id="main-header1" class="inferno">DR&CG</h1>
-        <h2 id="main-header">ROLL SOME DICE and GET SOME COLOR</h2>
-        <button id='button' class="roller">ROLL THE DICE</button>
+        <h2 id="main-header" class="main-header">ROLL SOME DICE and GET SOME COLOR</h2>
+        <button id='button' class="roller main-header">ROLL THE DICE</button>
         <audio id="dice">
             <source src="audio/dice.mp3" type="audio/mp3">
         </audio>
         <br>
+        <div class="content">
         <div class="containerGrid border" id="container-Grid">
             <div class="container1 box1 darkblue"></div>
             <div class="container1 box2 blue"></div>
@@ -43,7 +43,7 @@
             <div class="container1 box19 lightgrey"></div>
             <div class="container1 box20 whitesmoke"></div>
         </div>
-
+        </div>
         <br>
 
         <!--//roll the dice pick a dice to roll-->
@@ -51,7 +51,7 @@
         <form class="rollDieFunction border" method="post">
             <label for="mySelect" class="border competent">CHOOSE A DIE TO ROLL</label>
             <br>
-            <select id="mySelect" onclick="">
+            <select id="mySelect" class="main-header" onclick="">
                 <option class="tetrahedron" value="4">Tetrahedron</option>
                 <option class="rollDie" value="6">Six Sided Die</option>
                 <option class="7sided" value="7">Seven Sided Die</option>
@@ -65,7 +65,7 @@
 
             <label for="mySelect2" class="competent border">HOW MANY TIMES DO YOU WANT TO ROLL?</label>
             <br>
-            <select id="mySelect2">
+            <select id="mySelect2" class="main-header">
                 <option class="numberOfRolls" value="1">1</option>
                 <option class="numberOfRolls" value="2">2</option>
                 <option class="numberOfRolls" value="3">3</option>

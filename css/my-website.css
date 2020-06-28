@@ -383,19 +383,23 @@ p {
     background: lightslategrey;
     color: black;
     font-size: 40px;
-    /*border: 2px whitesmoke solid;*/
+    border: 2px whitesmoke solid;
     border-radius: 4px;
     padding: 10px
 }
-/*.card-grid{*/
-/*    margin-top: 30px;*/
-/*    display: grid;*/
-/*    column-gap: 10px;*/
-/*    grid-template-columns: 50% 50%;*/
-/*    grid-template-rows: 50% 50%;*/
-/*    grid-template-areas:*/
-/*                "card1 card2";*/
-/*}*/
+
+a, a{
+    color: black;
+}
+
+.card-grid{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Heiti SC", sans-serif;
+}
+
 /*.card1{*/
 /*    grid-area: card1;*/
 /*    display: flex;*/
