@@ -1,44 +1,54 @@
-body{
+body {
     margin: 0px;
     background: grey;
 
 }
 
-.container{
+.container {
     display: grid;
     grid-template-columns: 25% 50% 25%;
     grid-template-areas: 'left center right';
 }
 
-.main-page{
+.main-page {
     font-family: Helvetica, sans-serif;
     color: ghostwhite;
     text-shadow: black 2px 2px 5px;
     height: 600px;
 }
-.center{
+
+.center {
     display: grid;
     grid-area: center;
 }
 
-#main-header1{
-    font-size: 80px;
+#main-header1 {
+    font-size: 120px;
     font-weight: 600;
+    height: 150px;
     margin: 0px;
+    align-items: center;
     font-family: Copperplate, sans-serif;
     display: flex;
     justify-content: center;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, .5);;
 }
 
-.main-header{
+.main-header {
+    font-family: Helvetica, sans-serif;
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 20px;
     display: flex;
+    font-weight: 600;
     justify-content: center;
+    color: whitesmoke;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, .5);;
+    padding: 8px 0px 15px 0px;
+
 }
 
-#button{
-    background: ghostwhite;
+#button {
+    background: rgb(255, 255, 255);
     font-size: 16px;
     text-transform: uppercase;
     font-family: Helvetica, sans-serif;
@@ -48,42 +58,40 @@ body{
     box-shadow: 0px 2px 5px rgba(0, 0, 0, .5);
 }
 
-.left{
+.left {
     display: grid;
     grid-area: left;
 }
 
-.right{
+.right {
     display: grid;
     grid-area: right;
 }
-.content{
+
+.content {
     display: flex;
     justify-content: center;
     align-content: center;
 }
+
 .containerGrid {
     display: grid;
     border: 2px lightgray solid;
     box-shadow: black 2px 2px 4px;
     height: 200px;
     width: 225px;
-    grid-template-areas:
-            "box1 box2 box3 box4 box5"
-            "box6 box7 box8 box9 box10"
-            "box11 box12 box13 box14 box15"
-            "box16 box17 box18 box19 box20";
+    grid-template-areas: "box1 box2 box3 box4 box5" "box6 box7 box8 box9 box10" "box11 box12 box13 box14 box15" "box16 box17 box18 box19 box20";
 }
 
-.rollDieFunction{
-    height: 90%;
+.rollDieFunction {
+    height: 82%;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
 
-#boox1{
+#boox1 {
     grid-area: box1;
     width: 50px;
     height: 50px;
@@ -91,7 +99,8 @@ body{
     animation-name: example;
     animation-duration: 4s;
 }
-#boox2{
+
+#boox2 {
     grid-area: box2;
     width: 50px;
     height: 50px;
@@ -99,7 +108,8 @@ body{
     animation-name: example;
     animation-duration: 4s;
 }
-#boox3{
+
+#boox3 {
     grid-area: box3;
     width: 50px;
     height: 50px;
@@ -107,7 +117,8 @@ body{
     animation-name: example;
     animation-duration: 4s;
 }
-#boox4{
+
+#boox4 {
     grid-area: box4;
     width: 50px;
     height: 50px;
@@ -115,7 +126,8 @@ body{
     animation-name: example;
     animation-duration: 4s;
 }
-#boox5{
+
+#boox5 {
     grid-area: box5;
     width: 50px;
     height: 50px;
@@ -123,7 +135,8 @@ body{
     animation-name: example;
     animation-duration: 4s;
 }
-#boox6{
+
+#boox6 {
     grid-area: box6;
     width: 50px;
     height: 50px;
@@ -131,7 +144,8 @@ body{
     animation-name: example;
     animation-duration: 4s;
 }
-#boox7{
+
+#boox7 {
     grid-area: box7;
     width: 50px;
     height: 50px;
@@ -139,7 +153,8 @@ body{
     animation-name: example;
     animation-duration: 4s;
 }
-#boox8{
+
+#boox8 {
     grid-area: box8;
     width: 50px;
     height: 50px;
@@ -147,7 +162,8 @@ body{
     animation-name: example;
     animation-duration: 4s;
 }
-#boox9{
+
+#boox9 {
     grid-area: box9;
     width: 50px;
     height: 50px;
@@ -155,7 +171,8 @@ body{
     animation-name: example;
     animation-duration: 4s;
 }
-#boox10{
+
+#boox10 {
     grid-area: box10;
     width: 50px;
     height: 50px;
@@ -163,7 +180,8 @@ body{
     animation-name: example;
     animation-duration: 4s;
 }
-#boox11{
+
+#boox11 {
     grid-area: box11;
     width: 50px;
     height: 50px;
@@ -171,7 +189,8 @@ body{
     animation-name: example;
     animation-duration: 4s;
 }
-#boox12{
+
+#boox12 {
     grid-area: box12;
     width: 50px;
     height: 50px;
@@ -179,7 +198,8 @@ body{
     animation-name: example;
     animation-duration: 4s;
 }
-#boox13{
+
+#boox13 {
     grid-area: box13;
     width: 50px;
     height: 50px;
@@ -187,7 +207,8 @@ body{
     animation-name: example;
     animation-duration: 4s;
 }
-#boox14{
+
+#boox14 {
     grid-area: box14;
     width: 50px;
     height: 50px;
@@ -195,7 +216,8 @@ body{
     animation-name: example;
     animation-duration: 4s;
 }
-#boox15{
+
+#boox15 {
     grid-area: box15;
     width: 50px;
     height: 50px;
@@ -203,7 +225,8 @@ body{
     animation-name: example;
     animation-duration: 4s;
 }
-#boox16{
+
+#boox16 {
     grid-area: box16;
     width: 50px;
     height: 50px;
@@ -211,7 +234,8 @@ body{
     animation-name: example;
     animation-duration: 4s;
 }
-#boox17{
+
+#boox17 {
     grid-area: box17;
     width: 50px;
     height: 50px;
@@ -219,7 +243,8 @@ body{
     animation-name: example;
     animation-duration: 4s;
 }
-#boox18{
+
+#boox18 {
     grid-area: box18;
     width: 50px;
     height: 50px;
@@ -227,7 +252,8 @@ body{
     animation-name: example;
     animation-duration: 4s;
 }
-#boox19{
+
+#boox19 {
     grid-area: box19;
     width: 50px;
     height: 50px;
@@ -235,7 +261,8 @@ body{
     animation-name: example;
     animation-duration: 4s;
 }
-#boox20{
+
+#boox20 {
     grid-area: box20;
     width: 50px;
     height: 50px;
@@ -243,84 +270,104 @@ body{
     animation-name: example;
     animation-duration: 4s;
 }
-.box1{
+
+.box1 {
     grid-area: box1;
     background: darkblue;
 }
-.box2{
+
+.box2 {
     grid-area: box2;
     background: blue;
 }
-.box3{
+
+.box3 {
     grid-area: box3;
     background: royalblue;
 }
-.box4{
+
+.box4 {
     grid-area: box4;
     background: dodgerblue;
 }
-.box5{
+
+.box5 {
     grid-area: box5;
     background: lightskyblue;
 }
-.box6{
+
+.box6 {
     grid-area: box6;
     background: darkgreen;
 }
-.box7{
+
+.box7 {
     grid-area: box7;
     background: green;
 }
-.box8{
+
+.box8 {
     grid-area: box8;
     background: yellowgreen;
 }
-.box9{
+
+.box9 {
     grid-area: box9;
     background: greenyellow;
 }
-.box10{
+
+.box10 {
     grid-area: box10;
     background: palegreen;
 }
-.box11{
+
+.box11 {
     grid-area: box11;
     background: darkred;
 }
-.box12{
+
+.box12 {
     grid-area: box12;
-    background:  firebrick;
+    background: firebrick;
 }
-.box13{
+
+.box13 {
     grid-area: box13;
     background: red;
 
 }
-.box14{
+
+.box14 {
     grid-area: box14;
     background: darkorange;
 }
-.box15{
+
+.box15 {
     grid-area: box15;
     background: orange;
 }
-.box16{
+
+.box16 {
     grid-area: box16;
     background: black;
 }
-.box17{
+
+.box17 {
     grid-area: box17;
     background: grey;
 }
-.box18{
+
+.box18 {
     grid-area: box18;
     background: darkgrey;
 }
-.box19{
+
+.box19 {
     grid-area: box19;
     background: lightgrey;
 }
-.box20{
+
+.box20 {
     grid-area: box20;
     background: whitesmoke;
 }
@@ -331,10 +378,10 @@ body{
 }
 
 
-
-.my-link{
+.my-link {
     font-family: Copperplate, sans-serif;
 }
+
 .select-css {
     display: block;
     font-size: 16px;
@@ -354,19 +401,21 @@ body{
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
-    background-color: darkslategrey;
     background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
-    linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+    linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
     background-repeat: no-repeat, repeat;
     background-position: right .7em top 50%, 0 0;
     background-size: .65em auto, 100%;
 }
+
 .select-css::-ms-expand {
     display: none;
 }
+
 .select-css:hover {
     border-color: #888;
 }
+
 .select-css:focus {
     border-color: #aaa;
     box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
@@ -374,8 +423,9 @@ body{
     color: #222;
     outline: none;
 }
+
 .select-css option {
-    font-weight:normal;
+    font-weight: normal;
 }
 
 /* Support for rtl text, explicit support for Arabic and Hebrew */
@@ -388,8 +438,9 @@ body{
 .select-css:disabled, .select-css[aria-disabled=true] {
     color: graytext;
     background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22graytext%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
-    linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+    linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
 }
+
 .select-css:disabled:hover, .select-css[aria-disabled=true] {
     border-color: #aaa;
 }
