@@ -7,15 +7,15 @@
     <title>Dice Roller</title>
 </head>
 <body>
+    <div id="main-header1" class="inferno">DR&CG</div>
 <div class="container main-page">
     <div class="left">
 
 
     </div>
     <div class="center">
-    <h1 id="main-header1" class="inferno">DR&CG</h1>
-        <h2 id="main-header" class="main-header">ROLL SOME DICE and GET SOME COLOR</h2>
-        <button id='button' class="roller main-header">ROLL THE DICE</button>
+        <div id="main-header" class="main-header">ROLL SOME DICE and GET SOME COLOR</div>
+        <button id='button'>ROLL THE DICE</button>
         <audio id="dice">
             <source src="audio/dice.mp3" type="audio/mp3">
         </audio>
@@ -51,7 +51,7 @@
         <form class="rollDieFunction border" method="post">
             <label for="mySelect" class="border competent">CHOOSE A DIE TO ROLL</label>
             <br>
-            <select id="mySelect" class="main-header" onclick="">
+            <select id="mySelect" class="select-css">
                 <option class="tetrahedron" value="4">Tetrahedron</option>
                 <option class="rollDie" value="6">Six Sided Die</option>
                 <option class="7sided" value="7">Seven Sided Die</option>
@@ -65,7 +65,7 @@
 
             <label for="mySelect2" class="competent border">HOW MANY TIMES DO YOU WANT TO ROLL?</label>
             <br>
-            <select id="mySelect2" class="main-header">
+            <select id="mySelect2" class="select-css custom-select">
                 <option class="numberOfRolls" value="1">1</option>
                 <option class="numberOfRolls" value="2">2</option>
                 <option class="numberOfRolls" value="3">3</option>
