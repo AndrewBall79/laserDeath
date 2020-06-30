@@ -14,7 +14,11 @@ html {
     -o-background-size: cover;
     background-size: cover;
     text-align: center !important;
+    height: 100%;
+    margin-bottom: auto;
+    position: relative;
 }
+
 
 .regular-wrapper {
     height: 2px;
@@ -145,24 +149,6 @@ html {
     height: 120%;
 }
 
-.player-container {
-    position: -webkit-sticky;
-    position: sticky;
-    bottom: 2%;
-    padding-left: 70%;
-}
-
-
-.toggle-player {
-    width: 200px;
-    margin-right: 0px;
-}
-
-.player-frame {
-    background: whitesmoke;
-    border-radius: 4px;
-    box-shadow: 2px 2px 5px whitesmoke;
-}
 
 .come-in {
     transform: translateY(150px);
@@ -210,32 +196,24 @@ a:link, a:hover, a:visited, a:active {
     rotation: 15deg;
 }
 
-.footer {
-    color: whitesmoke;
-    background-color: #f5f5f5;
-    padding: 20px;
-    text-align: left;
-    position: -webkit-sticky;
-    bottom: 0px;
-    position: absolute;
-    width: 100%;
-    height: 160px;
-}
+
 
 .links {
     display: flex;
     flex-direction: column;
     margin: 0px;
 }
+p{
+    color: black;
+}
 
 p {
     margin: 0px !important;
 }
-
-#page-container {
-    position: relative;
-    min-height: 100vh;
+a:link, a:hover, a:active, a:visited{
+    color: black;
 }
+
 
 .content-wrap {
     padding-bottom: 160px; /* Footer height */
@@ -263,49 +241,62 @@ p {
     font-size: 10px;
 }
 
+
+.player-container {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 2%;
+    padding-left: 70%;
+}
+
+.toggle-player {
+    width: 200px;
+    margin-right: 0px;
+}
+
+.player-frame {
+    background: whitesmoke;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px whitesmoke;
+}
+
 .toggle-player {
     border: 10px rgba(100, 100, 100, .6) solid;
     background-color: silver;
+    border-radius: 4px;
     -webkit-animation: backShadow 2s infinite, playerAni 2s normal;
     -moz-animation: backShadow 2s infinite, playerAni 2s normal;
     animation: backShadow 2s infinite, playerAni 2s normal;
 }
 
 @keyframes playerAni {
-    0% {
-        background-color: rgba(100, 100, 100, .3);
-    }
-    40% {
-        background-color: black;
-    }
-    70% {
-        background-color: black;
-    }
-    60% {
-        background-color: rgba(100, 100, 100, .3);
-    }
-    75% {
-        background-color: rgba(100, 100, 100, .5);
-    }
-    80% {
-        background-color: black;
-    }
-    90% {
-        background-color: rgba(100, 100, 100, .3);
-    }
-    95% {
-        background-color: black;
-    }
+    0% {background-color: rgba(100, 100, 100, .3);}
+    40% {background-color: black;}
+    70% {background-color: black;}
+    60% {background-color: rgba(100, 100, 100, .3);}
+    75% {background-color: rgba(100, 100, 100, .5);}
+    80% {background-color: black;}
+    90% {background-color: rgba(100, 100, 100, .3);}
+    95% {background-color: black;}
 }
 
 @keyframes backShadow {
-    0% {
-        box-shadow: 0 0px 4px rgba(255, 255, 255, 1);
-    }
-    50% {
-        box-shadow: 0 0px 4px rgba(255, 255, 255, 0);
-    }
+    0% {box-shadow: 0 0px 4px rgba(255, 255, 255, 1);}
+    50% {box-shadow: 0 0px 4px rgba(255, 255, 255, 0);}
 }
 
+.push {
+    height: 200px;
+}
+
+.footer {
+    color: whitesmoke;
+    padding: 20px;
+    position: -webkit-sticky;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
 
 
