@@ -113,6 +113,7 @@ p {
     height: 40vh;
     top: -30px;
     border: 10px  solid;
+    box-shadow: 0 0 10px red;
     -webkit-animation:prismAni 2s infinite  ;
     -moz-animation:prismAni 2s infinite  ;
     animation: prismAni 2s infinite  ;
@@ -149,7 +150,7 @@ p {
     background: lightgray;
     height: 100px;
     width: 200px;
-    clip-path: polygon(17% 0, 69% 18%, 100% 100%, 22% 50%);
+    clip-path: polygon(0 40%, 50% 35%, 100% 100%, 20% 80%);
     -webkit-animation:spin1 .8s linear reverse;
     -moz-animation:spin1 .6s linear reverse;
     animation:spin1 .6s linear reverse;
@@ -240,7 +241,7 @@ p {
     color: silver;
     height: 100px;
     width: 200px;
-    clip-path: polygon(23% 10%, 62% 2%, 65% 50%, 0% 100%);
+    clip-path: polygon(100% 40%, 50% 35%, 0 100%, 80% 80%);
     -webkit-animation:spin3 .6s linear reverse;
     -moz-animation:spin3 .6s linear reverse;
     animation:spin3 .6s linear reverse;
@@ -251,11 +252,7 @@ p {
 
 
 
-.prismWrap4{
-    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
-    border: 5px black;
 
-}
 .b4{
     display: flex;
     align-items: center;
@@ -263,15 +260,16 @@ p {
     grid-area: prism4;
     background: lightgray;
     height: 100px;
-    width: 200px;
-    clip-path: polygon(17% 100%, 30% 45%, 100% 0, 62% 77%);
+    width: 100px;
+    clip-path: polygon(50% 0, 50% 0, 75% 25%, 100% 50%, 75% 75%, 50% 100%, 50% 100%, 25% 75%, 0 50%, 25% 25%);
     -webkit-animation:spin4 .6s linear reverse;
     -moz-animation:spin4 .6s linear reverse;
     animation:spin4 .6s linear reverse;
 }
 @-moz-keyframes spin4 { 100% { -moz-transform: rotate(-45deg); } }
 @-webkit-keyframes spin4 { 100% { -webkit-transform: rotate(-45deg); } }
-@keyframes spin4 { 100% { -webkit-transform: rotate(-45deg); transform:rotate(-45deg); } }
+@keyframes spin4 { 100% { -webkit-transform: rotate(-45deg);
+    transform:rotate(-45deg); } }
 .b4A{
     display: flex;
     align-items: center;
@@ -279,14 +277,19 @@ p {
     grid-area: prism6;
     background: rgb(120,0,0);
     height: 100px;
-    width: 200px;
+    width: 100px;
     -webkit-animation:polygon4 2s forwards  ;
     -moz-animation:polygon4 2s forwards  ;
     animation: polygon4 2s forwards  ;
 }
-@keyframes polygon4 {
-    100% {clip-path: polygon(0 0, 60% 45%, 100% 0, 62% 77%);}
+@-moz-keyframes polygon4 { 100% { -moz-transform: rotate(-110deg); } }
+@-webkit-keyframes polygon4 { 100% { -webkit-transform: rotate(-110deg); } }
+@keyframes polygon4 { 100% { -webkit-transform: rotate(-90deg);transform:rotate(-110deg); }
+    100% {clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);}
+    100% { -moz-transform: rotate(-110deg);}
 }
+
+
 .PW5{
     -webkit-animation:PS5 3s linear forwards;
     -moz-animation:PS5 3s linear forwards;
@@ -358,18 +361,16 @@ p {
     100% { -webkit-transform: rotate(180deg); transform:rotate(180deg);}
 }
 
-
-.prismWrap6{
-}
 .b6{
     display: flex;
     align-items: center;
     justify-content: center;
     grid-area: prism6;
     background: lightgray;
+    margin: 0 44px 0 44px;
     height: 100px;
-    width: 200px;
-    clip-path: polygon(0 0, 76% 44%, 89% 100%, 33% 79%);
+    width: 100px;
+    clip-path: polygon(50% 0, 50% 0, 75% 25%, 100% 50%, 75% 75%, 50% 100%, 50% 100%, 25% 75%, 0 50%, 25% 25%);
     -webkit-animation:spin6 .6s linear reverse;
     -moz-animation:spin6 .6s linear reverse;
     animation:spin6 .6s linear reverse;
@@ -388,14 +389,16 @@ p {
     grid-area: prism6;
     background: rgb(120,0,0);
     height: 100px;
-    width: 200px;
+    width: 100px;
     -webkit-animation:polygon6 2s forwards  ;
     -moz-animation:polygon6 2s forwards  ;
     animation: polygon6 2s forwards  ;
 }
-@keyframes polygon6 {
-    0% {clip-path: polygon(0 0, 76% 44%, 89% 100%, 33% 79%);}
-    100% {clip-path: polygon(0 0, 30% 40%, 89% 0%, 33% 79%);}
+@-moz-keyframes polygon6 { 100% { -moz-transform: rotate(110deg); } }
+@-webkit-keyframes polygon6 { 100% { -webkit-transform: rotate(110deg); } }
+@keyframes polygon6 { 100% { -webkit-transform: rotate(110deg);transform:rotate(110deg); }
+    100% {clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);}
+    100% { -moz-transform: rotate(110deg);}
 }
 .bg {
     background: linear-gradient(rgba(150, 150, 150, .7),rgba(100, 100, 137, .7));
