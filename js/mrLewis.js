@@ -25,3 +25,16 @@ $(".media-toggle").click(function () {
     }, "slow");
 });
 
+$(".image").hide();
+$(".image-toggle").click(function () {
+    $(".image").animate({
+        height: "toggle",
+        opacity: "toggle"
+    }, "slow");
+});
+
+$('.carousel').carousel({
+    interval: 2000
+});
+
+

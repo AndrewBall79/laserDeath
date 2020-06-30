@@ -22,6 +22,11 @@ body {
     grid-area: center;
 }
 
+.shadow-box{
+    box-shadow: 0 8px 6px -6px black;
+
+}
+
 #main-header1 {
     font-size: 120px;
     font-weight: 600;
@@ -31,7 +36,8 @@ body {
     font-family: Copperplate, sans-serif;
     display: flex;
     justify-content: center;
-    text-shadow: 0px 2px 5px rgba(0, 0, 0, .5);;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, .5);
+
 }
 
 .main-header {
@@ -55,7 +61,7 @@ body {
     font-weight: 700;
     color: #444;
     border-radius: 7px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, .5);
+    box-shadow: 0 8px 6px -6px  rgba(0, 0, 0, .8);
 }
 
 .left {
@@ -418,7 +424,7 @@ body {
 
 .select-css:focus {
     border-color: #aaa;
-    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+    box-shadow: 0 8px 6px -6px  rgba(0, 0, 0, .8);
     box-shadow: 0 0 0 3px -moz-mac-focusring;
     color: #222;
     outline: none;

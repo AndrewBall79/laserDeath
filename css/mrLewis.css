@@ -14,24 +14,29 @@ html {
     -o-background-size: cover;
     background-size: cover;
     text-align: center !important;
-
 }
 
-.regular-wrapper{
+.regular-wrapper {
     height: 2px;
     width: 100vw;
     background: red;
     margin-bottom: 10px;
-    float:right;
-    animation-delay: 1s;
-    animation-duration: 2s;
-    animation-name: slideIn;
+    float: right;
+    -webkit-animation: slideIn 2s forwards;
+    -moz-animation: slideIn 2s forwards;
+    animation: slideIn 2s forwards;
 }
-@keyframes slideIn {
-    0%   {background-color: red;}
-    40%   {background-color: white;}
-    100%   {background-color: red;}
 
+@keyframes slideIn {
+    0% {
+        background-color: red;
+    }
+    40% {
+        background-color: white;
+    }
+    100% {
+        background-color: red;
+    }
     from {
         margin-right: -100%;
     }
@@ -44,10 +49,11 @@ html {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
-.jumbotron{
- background: none !important;
+.jumbotron {
+    background: none !important;
 }
 
 .main-page {
@@ -58,23 +64,48 @@ html {
     color: rgba(255, 255, 255, .2);
     font-size: 60px;
     font-family: 'Righteous', cursive;
-    -webkit-animation:headerAni 4s infinite  ;
-    -moz-animation:headerAni 4s infinite  ;
-    animation: headerAni 4s infinite  ;
+    -webkit-animation: headerAni 4s infinite;
+    -moz-animation: headerAni 4s infinite;
+    animation: headerAni 4s infinite;
 }
+
 @keyframes headerAni {
-    0%   {-webkit-text-stroke: 1px red;}
-    10%   {-webkit-text-stroke: 1px black;}
-    20%  {-webkit-text-stroke: 1px red;}
-    40%   {-webkit-text-stroke: 1px darkgrey;}
-    60%  {-webkit-text-stroke: 1px red;}
-    70%   {-webkit-text-stroke: 1px black;}
-    75%  {-webkit-text-stroke: 1px whitesmoke;}
-    80%   {-webkit-text-stroke:  1px black;}
-    90%  {-webkit-text-stroke: 1px red;}
-    95%   {-webkit-text-stroke:  1px black;}
-    98%  {-webkit-text-stroke: 1px red;}
-    100%  {-webkit-text-stroke: 1px black;}
+    0% {
+        -webkit-text-stroke: 1px red;
+    }
+    10% {
+        -webkit-text-stroke: 1px black;
+    }
+    20% {
+        -webkit-text-stroke: 1px red;
+    }
+    40% {
+        -webkit-text-stroke: 1px darkgrey;
+    }
+    60% {
+        -webkit-text-stroke: 1px red;
+    }
+    70% {
+        -webkit-text-stroke: 1px black;
+    }
+    75% {
+        -webkit-text-stroke: 1px whitesmoke;
+    }
+    80% {
+        -webkit-text-stroke: 1px black;
+    }
+    90% {
+        -webkit-text-stroke: 1px red;
+    }
+    95% {
+        -webkit-text-stroke: 1px black;
+    }
+    98% {
+        -webkit-text-stroke: 1px red;
+    }
+    100% {
+        -webkit-text-stroke: 1px black;
+    }
 }
 
 .sub-header {
@@ -99,14 +130,9 @@ html {
     text-align: left;
 }
 
-.about-toggle{
-    color: #3a3848;
-    text-shadow: 0px 2px 2px black;
-}
 
-.toggle{
+.toggle {
     background: whitesmoke;
-
 }
 
 .about {
@@ -126,16 +152,13 @@ html {
     padding-left: 70%;
 }
 
-.player-toggle{
-    text-shadow: 0px 2px 2px black;
-}
 
-.toggle-player{
+.toggle-player {
     width: 200px;
     margin-right: 0px;
 }
 
-.player-frame{
+.player-frame {
     background: whitesmoke;
     border-radius: 4px;
     box-shadow: 2px 2px 5px whitesmoke;
@@ -151,32 +174,29 @@ html {
 }
 
 @keyframes come-in {
-    to { transform: translateY(0); }
+    to {
+        transform: translateY(0);
+    }
 }
 
-.media{
+.media {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.media-toggle{
-    color: #3a3848;
-    text-shadow: 0px 2px 2px black;
-}
-
-.media-content{
+.media-content {
     flex-direction: column;
     justify-content: center;
 }
 
-.links-container{
+.links-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-a:link, a:hover, a:visited, a:active{
+a:link, a:hover, a:visited, a:active {
     text-decoration: none;
 }
 
@@ -186,11 +206,11 @@ a:link, a:hover, a:visited, a:active{
     text-decoration: none;
 }
 
-.bi-plus-circle{
+.bi-plus-circle {
     rotation: 15deg;
 }
 
-.footer{
+.footer {
     color: whitesmoke;
     background-color: #f5f5f5;
     padding: 20px;
@@ -202,12 +222,13 @@ a:link, a:hover, a:visited, a:active{
     height: 160px;
 }
 
-.links{
+.links {
     display: flex;
     flex-direction: column;
     margin: 0px;
 }
-p{
+
+p {
     margin: 0px !important;
 }
 
@@ -217,28 +238,74 @@ p{
 }
 
 .content-wrap {
-    padding-bottom: 160px;    /* Footer height */
+    padding-bottom: 160px; /* Footer height */
 }
 
-.my-link{
+.lSide{
+    background: rgba(255, 255, 255, .5);
+}
+
+.image {
+    height: 600px;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.element {
+. center-block();
+}
+
+.my-link {
     font-size: 10px;
 }
 
-.toggle-player{
-    border: 10px rgba(100,100,100, .6) solid;
+.toggle-player {
+    border: 10px rgba(100, 100, 100, .6) solid;
     background-color: silver;
-    -webkit-animation:prismAni 2s normal  ;
-    -moz-animation:prismAni 2s normal  ;
-    animation: prismAni 2s normal  ;
+    -webkit-animation: backShadow 2s infinite, playerAni 2s normal;
+    -moz-animation: backShadow 2s infinite, playerAni 2s normal;
+    animation: backShadow 2s infinite, playerAni 2s normal;
 }
-@keyframes prismAni {
-    0%   {background-color: rgba(100,100,100, .3);}
-    40%   {background-color: black;}
-    70%   {background-color: black;}
-    60%  {background-color: rgba(100,100,100, .3);}
-    75%  {background-color: rgba(100,100,100, .5);}
-    80%   {background-color: black;}
-    90%  {background-color: rgba(100,100,100, .3);}
-    95%   {background-color: black;}
+
+@keyframes playerAni {
+    0% {
+        background-color: rgba(100, 100, 100, .3);
+    }
+    40% {
+        background-color: black;
+    }
+    70% {
+        background-color: black;
+    }
+    60% {
+        background-color: rgba(100, 100, 100, .3);
+    }
+    75% {
+        background-color: rgba(100, 100, 100, .5);
+    }
+    80% {
+        background-color: black;
+    }
+    90% {
+        background-color: rgba(100, 100, 100, .3);
+    }
+    95% {
+        background-color: black;
+    }
 }
+
+@keyframes backShadow {
+    0% {
+        box-shadow: 0 0px 4px rgba(255, 255, 255, 1);
+    }
+    50% {
+        box-shadow: 0 0px 4px rgba(255, 255, 255, 0);
+    }
+}
+
+
 
