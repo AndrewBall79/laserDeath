@@ -1,20 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <title>Weather App</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"/>
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css" rel="stylesheet"/>
-    <link
-            rel="stylesheet"
-            href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.css"
-            type="text/css"
-    />
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.css" type="text/css"/>
     <style>
-        body {
-            background: linear-gradient(360deg,rgba(132,133,132,1) 33%, rgba(0,0,0,1) 96%);
-        }
+        body {background: linear-gradient(360deg, rgba(132, 133, 132, 1) 33%, rgba(0, 0, 0, 1) 96%);}
 
         .container {
             margin: 8px 0px 0px 8px;
@@ -46,10 +39,15 @@
             height: 60%;
             color: white;
             font-size: 30px;
-            font-family: "Heiti TC",sans-serif;
+            font-family: "Heiti TC", sans-serif;
             text-shadow: 0px 0px 4px purple;
             padding: 5px;
             margin-top: 40px;
+
+        }
+
+        .my-link {
+            font-family: "Heiti TC", sans-serif;
 
         }
 
@@ -144,7 +142,7 @@
         <div id="weatherDay3"></div>
 
     </div>
-    <div id="locationBanner">Click On The Map To Begin</div>
+    <div id="locationBanner">Search A Location Or Drag The Cursor To Begin</div>
 </div>
 <p class="date"></p>
 <div class="screenNo">
@@ -161,8 +159,10 @@
 <div id='map'></div>
 <pre id="coordinates" class="coordinates"></pre>
 
+
 <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js"></script>
 
+<a class="my-link" href="https://andrewball79.github.io/laserLinks/">Page Design By Andrew Ball</a>
 <!-- Promise polyfill script required to use Mapbox GL Geocoder in IE 11 -->
 
 
