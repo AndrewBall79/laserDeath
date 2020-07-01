@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css" rel="stylesheet"/>
+    <link
+            rel="stylesheet"
+            href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.css"
+            type="text/css"
+    />
+    <style>
+        body {
+            background: linear-gradient(360deg,rgba(132,133,132,1) 33%, rgba(0,0,0,1) 96%);
+        }
+
+        .container {
+            margin: 8px 0px 0px 8px;
+            display: grid;
+            border-radius: 4px;
+            grid-template-columns: 33% 33% 33%;
+            grid-template-rows: 50% 50%;
+            grid-template-areas: 'day1 day2 day3' 'day1 loc loc';
+            height: 300px;
+        }
+
+        #weatherDay1 {
+            grid-area: day1;
+        }
+
+        #weatherDay2 {
+            grid-area: day2;
+        }
+
+        #weatherDay3 {
+            grid-area: day3;
+        }
+
+        #locationBanner {
+            grid-area: loc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60%;
+            color: white;
+            font-size: 30px;
+            font-family: "Heiti TC",sans-serif;
+            text-shadow: 0px 0px 4px purple;
+            padding: 5px;
+            margin-top: 40px;
+
+        }
+
+        .weatherBox {
+            width: 98%;
+
+        }
+
+        .hiLo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4px;
+            font-size: 25px;
+        }
+
+        .icon {
+            background: linear-gradient(90deg, #0fb784 36%, #0a946a 81%);
+            font-family: Helvetica, sans-serif;
+        }
+
+        .date {
+            background: linear-gradient(90deg, lime 36%, #0a946a 81%);
+            font-size: 20px;
+            font-family: "Helvetica Neue", sans-serif;
+            padding: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px;
+        }
+
+        .summary {
+            background: linear-gradient(90deg, limegreen 36%, #0a946a 81%);
+            font-size: 20px;
+            font-family: Beirut, sans-serif;
+            padding: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .temp {
+            background: darkolivegreen;
+            font-family: "Heiti TC", sans-serif;
+            font-size: 25px;
+            padding: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px -2px 5px rgb(56 56 56);
+        }
+
+        #map {
+            /* the width and height may be set to any size */
+            width: 100%;
+            height: 300px;
+            box-shadow: 0px 0px 5px black;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .screenNo {
+            background-color: darkolivegreen;
+            color: white;
+            font-family: "Heiti TC";
+            height: 30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-shadow: 0px 0px 2px black;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<!--Weather Container Weather Container Weather Container Weather Container-->
+<div class="container">
+    <div class="weatherBox">
+        <div id="weatherDay1"></div>
+    </div>
+    <div class="weatherBox">
+        <div id="weatherDay2"></div>
+    </div>
+    <div class="weatherBox">
+        <div id="weatherDay3"></div>
+
+    </div>
+    <div id="locationBanner">Click On The Map To Begin</div>
+</div>
+<p class="date"></p>
+<div class="screenNo">
+    Longitude<input id="long">
+    Latitude<input id="lat">
+    <button id="clickme" class="fly">click</button>
+
+
+</div>
+
+
+<!--MAP MAP MAP MAP MAP MAP MAP MAP MAP-->
+
+<div id='map'></div>
+<pre id="coordinates" class="coordinates"></pre>
+
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js"></script>
+
+<!-- Promise polyfill script required to use Mapbox GL Geocoder in IE 11 -->
+
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="js/keys.js"></script>
+<script>
+
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+<!-- Mapbox JS -->
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.js'></script>
+<!-- Custom JS -->
+<script src="js/weather_map.js"></script>
+<link
+        rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.css"
+        type="text/css"
+/>
+</body>
+
+</html>
