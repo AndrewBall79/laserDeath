@@ -104,7 +104,7 @@ $('.competent').css({'width': '98%', 'background': 'goldenrod', 'padding': '4px'
 
 $('#main-header1').hover(
     function () {
-        $('audio#dice')[0].play();
+        // $('audio#dice')[0].play();
 
         $(this).css({'color': 'goldenrod'});
         // $(this).css()
