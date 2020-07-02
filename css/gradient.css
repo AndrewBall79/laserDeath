@@ -1,0 +1,55 @@
+
+
+body {
+    background: linear-gradient(33deg, rgba(107, 0, 0, 1) 10%, rgba(168, 37, 37, 1) 25%, rgba(205, 0, 0, 1) 39%, rgba(19, 47, 255, 1) 46%, rgba(232, 19, 19, 1) 53%, rgba(164, 0, 0, 1) 75%, rgba(131, 0, 0, 1) 87%);
+    font-family: "Heiti SC", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: black 2px 2px 5px;
+    background-size: 300%;
+    color: ghostwhite;
+    height: 100vh;
+    -webkit-animation:forefrontAni 10s ease infinite, spin1 10s linear infinite  ;
+    -moz-animation:forefrontAni 10s ease infinite, spin1 10s linear infinite  ;
+    animation: forefrontAni 10s ease infinite, spin1 10s linear infinite  ;
+}
+
+@keyframes spin1 {
+
+    100% { -webkit-transform: rotate(45deg); transform:rotate(45deg); } }
+@keyframes forefrontAni {
+    0% {
+        background-position: 0 50% ;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.gradient{
+    background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(164,0,0,1) 49%, rgba(255,255,255,1) 100%);
+    background-size: 300%;
+    height: 200px;
+    -webkit-animation:forefrontAni 10s ease infinite, spin1 10s linear infinite  ;
+    -moz-animation:forefrontAni 10s ease infinite, spin1 10s linear infinite  ;
+    animation: forefrontAni 10s ease infinite, spin1 10s linear infinite  ;
+}
+
+@keyframes spin1 {
+    0% { -webkit-transform: rotate(45deg); transform:rotate(45deg); }
+    100% { -webkit-transform: rotate(45deg); transform:rotate(45deg); } }
+@keyframes forefrontAni {
+    0% {
+        background-position: 0 50% ;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
