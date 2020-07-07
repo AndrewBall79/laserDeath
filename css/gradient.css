@@ -1,5 +1,4 @@
 
-
 body {
     background: linear-gradient(33deg, rgba(107, 0, 0, 1) 10%, rgba(168, 37, 37, 1) 25%, rgba(205, 0, 0, 1) 39%, rgba(19, 47, 255, 1) 46%, rgba(232, 19, 19, 1) 53%, rgba(164, 0, 0, 1) 75%, rgba(131, 0, 0, 1) 87%);
     font-family: "Heiti SC", sans-serif;
@@ -10,17 +9,14 @@ body {
     background-size: 300%;
     color: ghostwhite;
     height: 100vh;
-    -webkit-animation:forefrontAni 10s ease infinite, spin1 10s linear infinite  ;
-    -moz-animation:forefrontAni 10s ease infinite, spin1 10s linear infinite  ;
-    animation: forefrontAni 10s ease infinite, spin1 10s linear infinite  ;
+    -webkit-animation: forefrontAni 10s ease infinite, spin1 10s linear infinite;
+    -moz-animation: forefrontAni 10s ease infinite, spin1 10s linear infinite;
+    animation: forefrontAni 10s ease infinite, spin1 10s linear infinite;
 }
 
-@keyframes spin1 {
-
-    100% { -webkit-transform: rotate(45deg); transform:rotate(45deg); } }
 @keyframes forefrontAni {
     0% {
-        background-position: 0 50% ;
+        background-position: 0 50%;
     }
     50% {
         background-position: 100% 50%;
@@ -29,32 +25,97 @@ body {
         background-position: 0 50%;
     }
 }
+@keyframes spin1 {
+    0% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
 
-.gradient{
-    background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(164,0,0,1) 49%, rgba(255,255,255,1) 100%);
+/*.box{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-content: center;*/
+/*    font-size: 80px;*/
+/*    font-family: Helvetica, sans-serif;*/
+/*}*/
+
+.gradient {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 80px;
+    font-family: Helvetica, sans-serif;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 1) 0%, rgba(164, 0, 0, 1) 49%, rgba(255, 255, 255, 1) 100%);
     background-size: 10px;
-    height: 200px;
-    width: 400px;
+    height: 100px;
+    width: 100px;
     z-index: 100;
     border-radius: 10px;
     border: 2px solid black;
     box-shadow: 10px -10px 5px -6px black;
-    -webkit-animation:spin1 10s linear infinite  ;
-    -moz-animation:spin1 10s linear infinite  ;
-    animation:10s ease infinite, spin1 10s linear infinite  ;
+    -webkit-animation: forefrontAni 9s ease infinite;
+    -moz-animation: forefrontAni 9s ease infinite;
+    animation: forefrontAni 9s ease infinite;
 }
 
-@keyframes spin1 {
-    0% { -webkit-transform: rotate(45deg); transform:rotate(45deg); }
-    100% { -webkit-transform: rotate(45deg); transform:rotate(45deg); } }
-@keyframes forefrontAni {
-    0% {
-        background-position: 0 50% ;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0 50%;
-    }
+.gradient2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 80px;
+    font-family: Helvetica, sans-serif;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 1) 0%, rgba(0, 255, 0, 1) 50%, rgba(255, 255, 255, 1) 100%);
+    background-size: 10px;
+    height: 100px;
+    width: 100px;
+    z-index: 100;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 10px -10px 5px -6px black;
+    -webkit-animation: forefrontAni 8s ease infinite;
+    -moz-animation: forefrontAni 8s ease infinite;
+    animation: forefrontAni 8s ease infinite;
+}
+
+.gradient3 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 80px;
+    font-family: Helvetica, sans-serif;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+    background-size: 10px;
+    height: 100px;
+    width: 100px;
+    z-index: 100;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 10px -10px 5px -6px black;
+    -webkit-animation: forefrontAni 11s ease infinite;
+    -moz-animation: forefrontAni 11s ease infinite;
+    animation: forefrontAni 11s ease infinite;
+}
+
+.gradient4 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 80px;
+    font-family: Helvetica, sans-serif;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 1) 100%);
+    background-size: 10px;
+    height: 100px;
+    width: 100px;
+    z-index: 100;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 10px -10px 5px -6px black;
+    -webkit-animation: forefrontAni 10s ease infinite;
+    -moz-animation: forefrontAni 10s ease infinite;
+    animation: forefrontAni 10s ease infinite;
 }
