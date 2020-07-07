@@ -32,11 +32,16 @@ body {
 
 .gradient{
     background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(164,0,0,1) 49%, rgba(255,255,255,1) 100%);
-    background-size: 300%;
+    background-size: 10px;
     height: 200px;
-    -webkit-animation:forefrontAni 10s ease infinite, spin1 10s linear infinite  ;
-    -moz-animation:forefrontAni 10s ease infinite, spin1 10s linear infinite  ;
-    animation: forefrontAni 10s ease infinite, spin1 10s linear infinite  ;
+    width: 400px;
+    z-index: 100;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 10px -10px 5px -6px black;
+    -webkit-animation:spin1 10s linear infinite  ;
+    -moz-animation:spin1 10s linear infinite  ;
+    animation:10s ease infinite, spin1 10s linear infinite  ;
 }
 
 @keyframes spin1 {
