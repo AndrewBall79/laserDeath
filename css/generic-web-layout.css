@@ -1,0 +1,321 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+/*Grid Template Areas For Main Grid*/
+main {
+    background: lightgrey;
+    display: grid;
+    grid-template-rows: 10% 67% 13% 11%;
+    grid-template-columns: 15% 82%;
+    height: 100vh;
+    width: 100vw;
+    grid-template-areas:
+                    " nav nav"
+                    " side boxd"
+                    " sidespace numbers"
+                    " sidespace footer";
+}
+
+/*Grid Template Areas For Second Grid*/
+.headline1-grid{
+    display: grid;
+    grid-area: boxd;
+    grid-template-rows: 11% 21% 10% 21% 10% 23%;
+    grid-template-columns: 65% 30%;
+    height: 70vh;
+    width: 85vw;
+    grid-template-areas:
+                    "header1 a1"
+                    "article1 a2"
+                    "header2 a3"
+                    "article2 a4"
+                    "header3 a5"
+                    "article3 a6";
+}
+
+/*Nav Bar And Nav Bar Hover Effects*/
+nav {
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+    grid-area: nav;
+    background: black;
+    justify-content: flex-start;
+    position: relative;
+    border-radius: 0  14px 14px 0;
+}
+.navigation {
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    align-items: center;
+    color: whitesmoke;
+    height: 3em;
+    width: 50%;
+    padding: 5px;
+    text-decoration: none;
+    animation: ease-in;
+}
+.nav a:visited{
+    text-decoration: none;
+    color: silver;
+}
+.nav a:link{
+    text-decoration: none;
+    color: silver;
+}
+.nav a:hover {
+    text-decoration: none;
+    color: lightblue;
+    padding: 10px;
+    transition-duration: 1s;
+}
+.logo:hover{
+    background: purple;
+    transition-duration: .5s;
+    font-family: 'Bebas Neue', cursive;
+}
+.dropbtn {
+    display: flex;
+    background-color: black;
+    color: white;
+    border: none;
+    align-content: center;
+    border-radius: 4px;
+}
+.button{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px mediumpurple;
+}
+.dropdown {
+    font-family: 'Bebas Neue', cursive;
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content  {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    background: #848487;
+    border-radius: 4px;
+    display: none;
+    position: absolute;
+    box-shadow: 2px 8px 16px 0 rgba(0,0,0,.6);
+    z-index: 1;
+}
+.dropdown-content a:hover {
+    background-color: grey;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: purple;
+}
+
+/*Side Bar And Sidebar Effects*/
+.sidebar, .sidespace {
+    background: linear-gradient(90deg, lightslategrey, lightgrey);
+    transition-duration: .5s;
+    grid-area: side;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-decoration: none;
+    animation: ease-in 1s;
+    font-family: 'Bebas Neue', cursive;
+    align-items: center;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+}
+.sidebar a:hover{
+    background: linear-gradient(90deg, purple, rgba(255,255,255,.5));
+    color: white;
+    box-shadow: 2px 2px 4px black;
+    transition-duration: .5s;
+    text-decoration: none;
+    transform: scale(2);
+    transition: transform .5s ease-in-out;
+}
+.sidebar a:link{
+    text-decoration: none;
+}
+
+/*Headlines And Articles Styling*/
+.headlines {
+    font-size: 20px;
+    color: white;
+    align-items: center;
+    padding: 12px 0 0 10px;
+    margin: 0;
+    text-shadow: 2px 2px 5px black;
+    box-shadow: 4px 3px 3px lightslategrey;
+    border-radius: 0  14px 14px 0;
+    background: linear-gradient(90deg, lightgrey, rgba(255,255,255,.5));
+}
+.articles{
+    font-family: sans-serif;
+    font-size: 10px;
+    padding: 4px;
+    overflow: scroll;
+}
+
+/*Adspace Sam L J Photos*/
+.ads:hover img{
+    transform: scale(1.5);
+    transition: transform .5s ease
+}
+.adsLg, .adsSm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: silver 1px solid;
+    border-radius: 4px;
+    width: 90%;
+    height: 80%;
+    margin: 4px;
+    overflow: hidden;
+    box-shadow: 2px 2px 4px black;
+}
+
+/*Bottom Row Above Footer And Effects*/
+.num{
+    display: flex;
+    padding: 10px;
+    color: silver;
+    border: silver 1px solid;
+    border-radius: 4px;
+    align-items: center;
+    box-shadow: 2px 2px 4px black;
+}
+.num:hover{
+    background: black;
+    transition-duration: .5s;
+}
+.numbers {
+    grid-area: numbers;
+    background: linear-gradient(90deg, lightgrey, darkslategrey);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 0  14px 14px 0;
+    text-shadow: 2px 2px 1px black;
+    box-shadow: 4px 3px 4px lightslategrey;
+}
+
+/*Footer and Sub Footer */
+.footer {
+    grid-area: footer;
+}
+.sub-footer {
+    grid-area: subfooter;
+    padding: 4px;
+    background: #848487;
+    border-radius: 0  14px 14px 0;
+}
+
+/*This is for all my grid area designations*/
+.box-d{
+    grid-area: boxd;
+}
+.heading1 {
+    grid-area: header1;
+}
+.article1{
+    grid-area: article1;
+}
+.ad1 {
+    grid-area: a1;
+}
+.ad2 {
+    grid-area: a2;
+}
+.heading2 {
+    grid-area: header2;
+}
+.article2{
+    grid-area: article2;
+}
+.ad3 {
+    grid-area: a3;
+
+}
+.ad4 {
+    grid-area: a4;
+}
+.heading3 {
+    grid-area: header3;
+}
+.article3{
+    grid-area: article3;
+}
+.ad5 {
+    grid-area: a5;
+}
+.ad6 {
+    grid-area: a6;
+}
+.sidespace{
+    grid-area: sidespace;
+}
+
+@media screen and (max-width: 495px){
+    .shrink{
+        display: none;
+    }
+    /*Main grid in mobile */
+    main {
+        background: lightgrey;
+        display: grid;
+        grid-template-rows: 5% 5% 73% 6% 11% 5%;
+        grid-template-columns:  82%;
+        height: 150vh;
+        width: 100vw;
+        grid-template-areas:
+                " nav nav"
+                " side side"
+                " boxd boxd"
+                " numbers numbers"
+                " footer footer"
+                " sub sub";
+    }
+
+    /*Grid Template Areas For Second Grid*/
+    .headline1-grid{
+        display: grid;
+        grid-area: boxd;
+
+        grid-template-rows: 11% 37% 10% 47% 10% 45%;
+        grid-template-columns: 85% 30%;
+        height: 70vh;
+        width: 85vw;
+        grid-template-areas:
+                "header1 a1"
+                "article1 a2"
+                "header2 a3"
+                "article2 a4"
+                "header3 a5"
+                "article3 a6";
+    }
+    .sidespace{
+        display: none;
+    }
+
+    .sidebar{
+        flex-direction: row;
+    }
+}
+.articles{
+    font-size: 16px;
+    height: auto;
+    overflow: auto;
+}
