@@ -1,30 +1,50 @@
-
 body {
-    background: linear-gradient(33deg, rgba(107, 0, 0, 1) 10%, rgba(168, 37, 37, 1) 25%, rgba(205, 0, 0, 1) 39%, rgba(19, 47, 255, 1) 46%, rgba(232, 19, 19, 1) 53%, rgba(164, 0, 0, 1) 75%, rgba(131, 0, 0, 1) 87%);
+    background: black;
+}
+
+.big-gradient {
+    position: absolute;
+    background: linear-gradient(33deg, rgba(0, 0, 0, .1) 10%, rgba(0, 0, 0, .1) 29%, rgba(19, 47, 100, 1) 30%, rgba(0, 0, 0, .1) 31%, rgba(0, 0, 0, .1) 75%, rgba(0, 0, 0, .1) 87%);
     font-family: "Heiti SC", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     text-shadow: black 2px 2px 5px;
-    background-size: 300%;
+    background-size: 800%;
+    border-radius: 100%;
     color: ghostwhite;
-    height: 100vh;
-    -webkit-animation: forefrontAni 10s ease infinite, spin1 10s linear infinite;
-    -moz-animation: forefrontAni 10s ease infinite, spin1 10s linear infinite;
-    animation: forefrontAni 10s ease infinite, spin1 10s linear infinite;
+    height: 400px;
+    width: 400px;
+    z-index: 600;
+    top: 20%;
+    left: 20%;
+    -webkit-animation: forefrontAni 20s ease infinite, glow1 10s normal infinite;
+    -moz-animation: forefrontAni 20s ease infinite, glow1 10s normal infinite;
+    animation: forefrontAni 20s ease infinite, glow1 10s normal infinite;
+}
+
+@keyframes glow1 {
+    0%{
+        box-shadow: 0 0 0 whitesmoke;
+    }
+    50%{
+        box-shadow: 0 0 50px whitesmoke;
+    }
+    100%{
+        box-shadow: 0 0 0 white;
+    }
 }
 
 @keyframes forefrontAni {
     0% {
         background-position: 0 50%;
     }
-    50% {
+
+    100% {
         background-position: 100% 50%;
     }
-    100% {
-        background-position: 0 50%;
-    }
 }
+
 @keyframes spin1 {
     0% {
         -webkit-transform: rotate(360deg);
@@ -36,86 +56,226 @@ body {
     }
 }
 
-/*.box{*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-content: center;*/
-/*    font-size: 80px;*/
-/*    font-family: Helvetica, sans-serif;*/
-/*}*/
+@keyframes spin2 {
+    0% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+    20% {
+        -webkit-transform: rotate(-300deg);
+        transform: rotate(-300deg);
+    }
+    50% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    70%{
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+    100%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
 
-.gradient {
+
+
+.box {
     display: flex;
     justify-content: center;
     align-content: center;
     font-size: 80px;
     font-family: Helvetica, sans-serif;
-    background: linear-gradient(270deg, rgba(255, 255, 255, 1) 0%, rgba(164, 0, 0, 1) 49%, rgba(255, 255, 255, 1) 100%);
-    background-size: 10px;
-    height: 100px;
-    width: 100px;
-    z-index: 100;
+    -webkit-animation: spin1 10s linear infinite;
+    -moz-animation: spin1 10s linear infinite;
+    animation: spin1 10s linear infinite;
+}
+
+.box2 {
+    position: absolute;
+    z-index: -1;
+    top: 43%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 80px;
+    font-family: Helvetica, sans-serif;
+    -webkit-animation: spin1 8s reverse infinite;
+    -moz-animation: spin1 8s reverse infinite;
+    animation: spin1 8s reverse infinite;
+}
+
+.gradient {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 80px;
+    font-family: Helvetica, sans-serif;
+    background: radial-gradient(circle, rgba(100,100,100,1) 0%, rgba(80,0,0,1) 5%, rgba(0,0,0,.01) 50%);
+    background-size: 500%;
+    height: 50px;
+    width: 50px;
+    z-index: 400;
     border-radius: 10px;
-    border: 2px solid black;
     box-shadow: 10px -10px 5px -6px black;
-    -webkit-animation: forefrontAni 9s ease infinite;
-    -moz-animation: forefrontAni 9s ease infinite;
-    animation: forefrontAni 9s ease infinite;
+    -webkit-animation: forefrontAni 5s forwards infinite;
+    -moz-animation: forefrontAni 5s forwards infinite;
+    animation: forefrontAni 5s forwards infinite;
+
+}
+
+.gradient-2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 80px;
+    font-family: Helvetica, sans-serif;
+    background: radial-gradient(circle, rgba(100,100,100,1) 0%, rgba(0,0,0,1) 15%, rgba(0,0,0,.01) 30%);
+    height: 50px;
+    width: 50px;
+    z-index: 400;
+    border-radius: 100%;
+    /*-webkit-animation: forefrontAni 5s forwards infinite;*/
+    /*-moz-animation: forefrontAni 5s forwards infinite;*/
+    /*animation: forefrontAni 5s forwards infinite;*/
 }
 
 .gradient2 {
+    position: relative;
     display: flex;
     justify-content: center;
     align-content: center;
     font-size: 80px;
     font-family: Helvetica, sans-serif;
-    background: linear-gradient(270deg, rgba(255, 255, 255, 1) 0%, rgba(0, 255, 0, 1) 50%, rgba(255, 255, 255, 1) 100%);
-    background-size: 10px;
-    height: 100px;
-    width: 100px;
-    z-index: 100;
+    background: radial-gradient(circle, rgba(100,100,100,1) 0%, rgba(0,100,0,1) 10%, rgba(100,100,100,1) 100%);
+    background-size: 400%;
+    height: 50px;
+    width: 50px;
+    z-index: 1;
     border-radius: 10px;
-    border: 2px solid black;
     box-shadow: 10px -10px 5px -6px black;
-    -webkit-animation: forefrontAni 8s ease infinite;
-    -moz-animation: forefrontAni 8s ease infinite;
-    animation: forefrontAni 8s ease infinite;
+    -webkit-animation: forefrontAni 2s ease infinite;
+    -moz-animation: forefrontAni 2s ease infinite;
+    animation: forefrontAni 2s ease infinite;
+}
+.gradient2-2 {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    z-index: 1;
+    border-radius: 100%;
+    margin: 0px 50px;
+    background: rgba(100,100,100,.3);
+    box-shadow: 0 0 10px white;
+    clip-path: polygon(0 0, 40% 50%, 0 100%, 50% 60%, 100% 100%, 60% 50%, 100% 0, 50% 40%);    -webkit-animation: spin2 10s normal infinite;
+    -moz-animation: spin2 10s normal infinite;
+    animation: spin2 10s normal infinite;
 }
 
 .gradient3 {
+    position: relative;
     display: flex;
     justify-content: center;
     align-content: center;
     font-size: 80px;
     font-family: Helvetica, sans-serif;
-    background: linear-gradient(270deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(270deg, rgba(255, 255, 255, .1) 0%, rgba(0, 0, 255, .1) 50%, rgba(255, 255, 255, .1) 100%);
     background-size: 10px;
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
     z-index: 100;
     border-radius: 10px;
-    border: 2px solid black;
+    border: 2px solid rgba(255, 255, 255, .5);
     box-shadow: 10px -10px 5px -6px black;
-    -webkit-animation: forefrontAni 11s ease infinite;
-    -moz-animation: forefrontAni 11s ease infinite;
-    animation: forefrontAni 11s ease infinite;
+    -webkit-animation: spin1 8s reverse infinite;
+    -moz-animation: spin1 8s reverse infinite;
+    animation: spin1 8s reverse infinite;
+}
+.gradient3-2 {
+    position: relative;
+    font-size: 80px;
+    font-family: Helvetica, sans-serif;
+    background: linear-gradient(270deg, rgba(255, 255, 255, .2) 0%, rgba(0, 0, 255, .2) 50%, rgba(255, 255, 255, .2) 100%);
+    background-size: 10px;
+    height: 50px;
+    width: 50px;
+    z-index: -1;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, .3);
+    box-shadow: 10px -10px 5px -6px black;
+    -webkit-animation: spin1 8s reverse infinite;
+    -moz-animation: spin1 8s reverse infinite;
+    animation: spin1 8s reverse infinite;
 }
 
 .gradient4 {
+    position: relative;
     display: flex;
     justify-content: center;
     align-content: center;
     font-size: 80px;
     font-family: Helvetica, sans-serif;
-    background: linear-gradient(270deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(270deg, rgba(100, 100, 100, .1) 0%, rgba(100, 0, 100, .1) 50%, rgba(100, 100, 100, .1) 100%);
     background-size: 10px;
-    height: 100px;
-    width: 100px;
-    z-index: 100;
+    height: 50px;
+    width: 50px;
+    z-index: 300;
     border-radius: 10px;
-    border: 2px solid black;
-    box-shadow: 10px -10px 5px -6px black;
+    box-shadow: 0 0 10px black;
     -webkit-animation: forefrontAni 10s ease infinite;
     -moz-animation: forefrontAni 10s ease infinite;
     animation: forefrontAni 10s ease infinite;
+}
+
+.gradient, .gradient2, .gradient3 {
+    position: relative;
+    display: inline-block;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Create the hidden pseudo-element */
+/* include the shadow for the end state */
+.gradient::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(155,155,155,0.8);
+    transition: opacity 0.3s ease-in-out;
+}
+.gradient:hover {
+    transform: scale(1.5, 1.5);
+}
+
+/* Fade in the pseudo-element with the bigger shadow */
+.gradient:hover::after {
+    opacity: 1;
+}
+
+.gradient3::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(155,155,155,1);
+
+}
+.gradient3:hover {
+    transform: scale(1.2, 1.2);
+    -webkit-animation: spin1 1s normal infinite;
+    -moz-animation: spin1 1s normal infinite;
+    animation: spin1 1s normal infinite;
+}
+
+/* Fade in the pseudo-element with the bigger shadow */
+.gradient3:hover::after {
+    opacity: 1;
 }
