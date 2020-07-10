@@ -1,14 +1,11 @@
 import React from "react";
 
-function Body() {
-    return (
-        <div className="body">
-            <h1>BODY</h1>
-            <h1>BODY</h1>
-            <h1>BODY</h1>
-            <h1>BODY</h1>
-        </div>
-    )
-}
+const MainContent = () =>
+        <div className="mainContent">
+            <p>Main Content</p>
+            <p>Main Content</p>
+            <p>Main Content</p>
+            <p>Main Content</p>
+        </div>;
 
-export default Body;
+export default MainContent;
