@@ -1,11 +1,9 @@
 import React from "react";
 
-var firstName = "Andrew";
-var lastName = "Ball";
-var someWord = "ball";
+
 const MyInfo = () =>
     <div>
-        <h1>{`${firstName} ${lastName}`} And A {someWord}</h1>
+
         <p>There's a lot of stuff to say about me.</p>
         <p className="other-works">LINKS TO OTHER WORKS</p>
         <p><a href="https://andrewball79.github.io/laserLinks/DiceRoller">DICE ROLLER</a></p>
