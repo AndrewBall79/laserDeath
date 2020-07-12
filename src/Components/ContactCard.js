@@ -1,15 +1,20 @@
 import React from "react";
 
-function ContactCard(props) {
-    return (
+class ContactCard extends React.Component {
+
+    render() {
+
+
+        return (
             <div className="contact-card">
-                <h3>{props.contact.name}</h3>
-                <img src={props.contact.imgUrl} alt=""/>
-                <p>{props.contact.description}</p>
-                <p>Price: {props.contact.price}</p>
+                <h3>{this.props.name}</h3>
+                <img src={this.props} alt=""/>
+                <p>{this.props.description}</p>
+                <p>Price: {this.props.price}</p>
             </div>
     )
 
+}
 }
 
 export default ContactCard;

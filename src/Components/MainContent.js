@@ -1,11 +1,13 @@
 import React from "react";
 
-const MainContent = () =>
+class MainContent extends React.Component{
+    render() {
+        return(
         <div className="mainContent">
             <p>Main Content</p>
-            <p>Main Content</p>
-            <p>Main Content</p>
-            <p>Main Content</p>
-        </div>;
+        </div>
+        )
+    }
+}
 
 export default MainContent;

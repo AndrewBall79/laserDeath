@@ -36,11 +36,7 @@ import toDoData from "./data/toDoData";
 
 class App extends React.Component {
 
-    yourMethodHere() {
-    }
-
     render() {
-        this.yourMethodHere();
         const toDoComponent = toDoData.map(toDo => <ToDoItem key={toDo.id} toDo={toDo}/>);
         const productsComponents = vschoolProducts.map(item => <Products key={vschoolProducts.id} product={item}/>);
         const jokeComponents = jokesData.map(joke => <Jokes key={joke.id} question={joke.question}

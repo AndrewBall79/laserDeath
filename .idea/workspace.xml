@@ -2,17 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c74460c-bc65-48e8-b538-53ba620a64e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/ContactCard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Jokes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Products.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/ToDoItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/jokesData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/toDoData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/vschoolProducts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/CheckBoxes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ContactCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ContactCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Jokes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Jokes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MainContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainContent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MyInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MyInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Products.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ToDoItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ToDoItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/footer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +100,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594399716197</updated>
-      <workItem from="1594399728877" duration="21722000" />
+      <workItem from="1594399728877" duration="24421000" />
     </task>
     <servers />
   </component>
