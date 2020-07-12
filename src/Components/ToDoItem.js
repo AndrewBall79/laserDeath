@@ -5,7 +5,7 @@ class ToDoItem extends React.Component {
         return (
             <div className="todo-item">
                 <input type="checkbox" checked={this.props.toDo.completed}/>{this.props.toDo.text}
-                <label>{this.props.toDo.text}</label><br/>
+                <label></label><br/>
             </div>
         )
     }
