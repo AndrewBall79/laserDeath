@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c74460c-bc65-48e8-b538-53ba620a64e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/images/IMG-6331.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/IMG_6032.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/Screen Shot 2020-02-03 at 2.17.42 PM.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/WatercolorSkull.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/bobbys-party.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/red-bats.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/skull-stamp.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/space-walk.JPG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Products.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/ToDoItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ToDoItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/vschoolProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/artProducts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/toDoData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/toDoData.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +99,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594399716197</updated>
-      <workItem from="1594399728877" duration="25852000" />
+      <workItem from="1594399728877" duration="26531000" />
+      <workItem from="1594657310203" duration="9707000" />
     </task>
     <servers />
   </component>
@@ -115,22 +108,22 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="809" height="290" key="GridCell.Tab.0.bottom" timestamp="1594506033720">
+    <state width="809" height="290" key="GridCell.Tab.0.bottom" timestamp="1594669903152">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="809" height="290" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1594506033720" />
-    <state width="809" height="290" key="GridCell.Tab.0.center" timestamp="1594506033719">
+    <state width="809" height="290" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1594669903152" />
+    <state width="809" height="290" key="GridCell.Tab.0.center" timestamp="1594669903151">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="809" height="290" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1594506033719" />
-    <state width="809" height="290" key="GridCell.Tab.0.left" timestamp="1594506033719">
+    <state width="809" height="290" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1594669903151" />
+    <state width="809" height="290" key="GridCell.Tab.0.left" timestamp="1594669903151">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="809" height="290" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1594506033718" />
-    <state width="809" height="290" key="GridCell.Tab.0.right" timestamp="1594506033720">
+    <state width="809" height="290" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1594669903151" />
+    <state width="809" height="290" key="GridCell.Tab.0.right" timestamp="1594669903152">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="809" height="290" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1594506033720" />
+    <state width="809" height="290" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1594669903152" />
     <state x="112" y="266" key="new project wizard" timestamp="1594498584134">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
