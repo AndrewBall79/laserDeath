@@ -69,9 +69,11 @@ class App extends React.Component {
     render() {
         const text = this.state.isLoading ? "Loading..." : this.state.character.name;
         let buttonText = this.state.isLoggedIn ? "Log Out" : "Log In";
-        const toDoItems = this.state.todos.map(item => <ToDoItem key={item.id} item={item} handleChange={this.handleChange}/>);
+        const toDoItems = this.state.todos.map(item => <ToDoItem key={item.id} item={item}
+                                                                 handleChange={this.handleChange}/>);
         const productsComponents = artProducts.map(item => <Products key={item.id} product={item}/>);
-        const jokeComponents = jokesData.map(joke => <Jokes key={joke.id} question={joke.question} punchLine={joke.punchLine}/>);
+        const jokeComponents = jokesData.map(joke => <Jokes key={joke.id} question={joke.question}
+                                                            punchLine={joke.punchLine}/>);
 
 
         return (
@@ -90,9 +92,7 @@ class App extends React.Component {
                 <div className="products-list">
                     {productsComponents}
                 </div>
-                <FormContainer/>
                 <br/>
-                <div className="swapi">{text}</div>
                 {/*<ContactCard contact={{}}/>*/}
                 {/*<ContactCard name="" imgUrl="" description="" price=""/>*/}
                 <MyInfo/>

@@ -44,14 +44,16 @@
 .todo-list{
   background: papayawhip;
   width: 75%;
+  border-top: 4px #282c34 solid;
   box-shadow:
           0 7px 4px -5px rgba(0,0,0,.5),
-          2px 4px 0 4px purple,
+          0 4px 0 4px purple,
           0 17px 5px -5px rgba(0,0,0,.5),
-          4px 8px 0 8px limegreen,
+          0 8px 0 8px limegreen,
           0 22px 5px rgba(0,0,0,.5);
   padding: 20px;
   margin-bottom: 40px;
+  margin-left: 100px;
   border-radius: 0 0 4px 4px ;
 }
 .todo-item{
