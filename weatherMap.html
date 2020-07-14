@@ -31,6 +31,13 @@
             grid-area: day3;
         }
 
+        .header{
+            color: white;
+            font-family: "Heiti TC", sans-serif;
+            text-shadow: 0 0 5px purple;
+            padding-left: 60px;
+            font-size: 40px;
+        }
         #locationBanner {
             grid-area: loc;
             display: flex;
@@ -53,7 +60,7 @@
 
         .weatherBox {
             width: 98%;
-
+            border-radius: 5px;
         }
 
         .hiLo {
@@ -117,7 +124,7 @@
         .screenNo {
             background-color: darkolivegreen;
             color: white;
-            font-family: "Heiti TC";
+            font-family: "Heiti TC", sans-serif;
             height: 30px;
             display: flex;
             justify-content: space-around;
@@ -129,6 +136,11 @@
     </style>
 </head>
 <body>
+<div>
+    <header>
+        <h1 class="header">WEATHER MAP</h1>
+    </header>
+</div>
 
 <!--Weather Container Weather Container Weather Container Weather Container-->
 <div class="container">
