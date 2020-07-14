@@ -1,26 +1,26 @@
 const toDoData = [
     {
-        id: 1,
+        id: 0,
         text:"Take out the trash",
         completed: false
     },
     {
-        id: 2,
+        id: 1,
         text:"Grocery Shopping",
         completed: false
     },
     {
-        id: 3,
+        id: 2,
         text:"Clean litter box",
-        completed: false
+        completed: true
+    },
+    {
+        id: 3,
+        text:"Stare into the abyss",
+        completed: true
     },
     {
         id: 4,
-        text:"Stare into the abyss",
-        completed: false
-    },
-    {
-        id: 5,
         text:"Catch 'em Kill 'em",
         completed: false
     }

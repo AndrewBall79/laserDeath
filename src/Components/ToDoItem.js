@@ -1,7 +1,11 @@
 import React from "react";
-import toDoData from "../data/toDoData";
-
+//
 function ToDoItem(props) {
+        const completedStyle ={
+                fontStyle: "italic",
+                color: "#cdcdcd",
+                textDecoration: "line-through"
+        };
     // constructor() {
     //     super();
     //     this.state = {
@@ -47,7 +51,7 @@ function ToDoItem(props) {
                     type="checkbox"
                     checked={props.item.completed}
                     onChange={() => props.handleChange(props.item.id)}/>
-                <p>{props.item.text}</p>
+                <p style={props.item.completed ? completedStyle: null}>{props.item.text}</p>
                 {/*<h1>{this.state.count}</h1>*/}
                 {/*<button onClick={this.handleClick}>Change</button>*/}
                 {/*<button onClick={this.handleClickX2}>Change X 2</button>*/}

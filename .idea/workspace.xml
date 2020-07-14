@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c74460c-bc65-48e8-b538-53ba620a64e3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Components/Conditional.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/FormComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/FormContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/ToDoItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ToDoItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/toDoData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/toDoData.js" afterDir="false" />
     </list>
@@ -50,6 +52,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -100,7 +103,7 @@
       <option name="presentableId" value="Default" />
       <updated>1594399716197</updated>
       <workItem from="1594399728877" duration="26531000" />
-      <workItem from="1594657310203" duration="9707000" />
+      <workItem from="1594657310203" duration="25326000" />
     </task>
     <servers />
   </component>
@@ -128,5 +131,9 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="112" y="266" key="new project wizard/0.23.1920.1057@0.23.1920.1057" timestamp="1594498584134" />
+    <state x="103" y="252" width="670" height="676" key="search.everywhere.popup" timestamp="1594751758294">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="103" y="252" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1594751758294" />
   </component>
 </project>
