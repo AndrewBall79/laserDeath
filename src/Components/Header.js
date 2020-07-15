@@ -6,11 +6,11 @@ class Header extends React.Component {
     render() {
         var firstName = "Andrew";
         var lastName = "Ball";
-        var someWord = "ball";
+        var someWord = "Another Dimension";
         return (
             <header className="App-header">
                 <h1>{`${firstName} ${lastName}`}</h1>
-                <h3>And A {someWord}</h3>
+                <h3>In {someWord}</h3>
             </header>
         )
     }
