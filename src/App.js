@@ -69,7 +69,7 @@ class App extends React.Component {
     // }
 
     render() {
-        const projectComponents = ProjectsData.map(project => <Projects key={project.id} product={project}/>);
+        const projectComponents = ProjectsData.map(item => <Projects key={item.id} item={item} project={item}/>);
         const productsComponents = artProducts.map(item => <Products key={item.id} product={item}/>);
         // const text = this.state.isLoading ? "Loading..." : this.state.character.name;
         // let buttonText = this.state.isLoggedIn ? "Log Out" : "Log In";
@@ -92,7 +92,6 @@ class App extends React.Component {
                 {/*</div>*/}
                 <div className="products-list">
                     {projectComponents}
-
                 </div>
                 <br/>
                 <div className="products-list">
