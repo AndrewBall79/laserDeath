@@ -15,6 +15,8 @@ import Products from "./Components/Products";
 import Projects from "./Components/Projects";
 import artProducts from "./data/artProducts";
 import ProjectsData from "./data/ProjectsData";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 class App extends React.Component {
