@@ -9,7 +9,7 @@ class Header extends React.Component {
         var someWord = "Another Dimension";
         return (
             <header className="App-header">
-                <h1>{`${firstName} ${lastName}`}</h1>
+                <p className="main-title">{`${firstName} ${lastName}`}</p>
                 <h3>In {someWord}</h3>
             </header>
         )

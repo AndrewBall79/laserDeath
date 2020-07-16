@@ -5,7 +5,6 @@ class MyInfo extends React.Component {
     render() {
         return (
             <div>
-                <p>There's a lot of stuff to say about me.</p>
                 <p className="other-works">LINKS TO OTHER WORKS</p>
                 <p><a href="https://andrewball79.github.io/laserLinks/DiceRoller">DICE ROLLER</a></p>
                 <p><a href="https://andrewball79.github.io/laserLinks/mrLewis">MR. LEWIS & THE FUNERAL 5</a></p>

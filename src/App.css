@@ -6,12 +6,13 @@
 .nav{
   background: papayawhip;
   color: whitesmoke;
+  font-family: "Heiti SC", sans-serif;
   text-shadow: 0 2px 5px rgba(0,0,0,.5);
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 180px;
+  min-height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,12 +20,11 @@
   font-size: calc(10px + 2vmin);
   color: white;
   z-index: 100;
+  font-family: "Heiti SC", sans-serif;
   box-shadow: 0 2px 5px black;
+  text-transform: uppercase;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
 
 @keyframes App-logo-spin {
@@ -42,6 +42,10 @@
 
 }
 
+.main-title{
+  font-size: 50px;
+}
+
 .todo-list{
   background: papayawhip;
   width: 75%;
@@ -57,11 +61,21 @@
   margin-left: 100px;
   border-radius: 0 0 4px 4px ;
 }
-.todo-item{
-  font-family: Helvetica, sans-serif;
+.projects {
+  font-family: "Heiti SC", sans-serif;
   font-size: 20px;
   padding: 5px;
+  color: whitesmoke;
   border-bottom: 1px solid mediumseagreen;
+  text-align: center;
+}
+.project-header{
+  font-size: 40px;
+}
+
+.projectsDescription{
+  width: 75%;
+  display: inline-block;
 }
 
 .footer{

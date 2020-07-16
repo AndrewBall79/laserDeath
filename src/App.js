@@ -5,17 +5,13 @@ import MyInfo from "./Components/MyInfo";
 import Header from "./Components/Header";
 import Nav from "./Components/Nav";
 import MainContent from "./Components/MainContent";
-// import ToDoItem from "./Components/ToDoItem";
-// import Jokes from "./Components/Jokes";
-// import jokesData from "./data/jokesData";
-// import Projects from "./Components/Projects";
-// import toDoData from "./data/toDoData";
-// import Conditional from "./Components/Conditional";
 import Products from "./Components/Products";
 import Projects from "./Components/Projects";
 import artProducts from "./data/artProducts";
 import ProjectsData from "./data/ProjectsData";
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 
 
@@ -95,14 +91,6 @@ class App extends React.Component {
                 <div className="products-list">
                     {projectComponents}
                 </div>
-                <br/>
-                <div className="products-list">
-                    {productsComponents}
-                </div>
-                <br/>
-                {/*<ContactCard contact={{}}/>*/}
-                {/*<ContactCard name="" imgUrl="" description="" price=""/>*/}
-                <MyInfo/>
                 <Footer/>
             </div>
         )
