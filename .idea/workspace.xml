@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3c74460c-bc65-48e8-b538-53ba620a64e3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Nav.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Projects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/ProjectsData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/ProjectsData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +101,7 @@
       <updated>1594399716197</updated>
       <workItem from="1594399728877" duration="26531000" />
       <workItem from="1594657310203" duration="36292000" />
-      <workItem from="1594919218896" duration="8774000" />
+      <workItem from="1594919218896" duration="9716000" />
     </task>
     <servers />
   </component>
@@ -118,22 +113,22 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="182" y="402" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1920.1057@0.23.1920.1057" timestamp="1594763624987" />
-    <state width="971" height="290" key="GridCell.Tab.0.bottom" timestamp="1594924665325">
+    <state width="962" height="290" key="GridCell.Tab.0.bottom" timestamp="1594930386029">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="971" height="290" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1594924665325" />
-    <state width="971" height="290" key="GridCell.Tab.0.center" timestamp="1594924665324">
+    <state width="962" height="290" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1594930386029" />
+    <state width="962" height="290" key="GridCell.Tab.0.center" timestamp="1594930386027">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="971" height="290" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1594924665324" />
-    <state width="971" height="290" key="GridCell.Tab.0.left" timestamp="1594924665323">
+    <state width="962" height="290" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1594930386027" />
+    <state width="962" height="290" key="GridCell.Tab.0.left" timestamp="1594930386026">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="971" height="290" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1594924665323" />
-    <state width="971" height="290" key="GridCell.Tab.0.right" timestamp="1594924665325">
+    <state width="962" height="290" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1594930386026" />
+    <state width="962" height="290" key="GridCell.Tab.0.right" timestamp="1594930386028">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="971" height="290" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1594924665325" />
+    <state width="962" height="290" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1594930386028" />
     <state x="112" y="266" key="new project wizard" timestamp="1594498584134">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
