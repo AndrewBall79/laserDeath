@@ -434,22 +434,12 @@ a, a{
     flex-direction: column;
     justify-content: center;
     font-family: "Heiti SC", sans-serif;
+    box-shadow: 0 5px 5px -2px black;
 }
-
-/*.card1{*/
-/*    grid-area: card1;*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*}*/
-
-/*.card2{*/
-/*    grid-area: card2;*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*}*/
 
 .imgSkull{
     position: absolute;
+    box-shadow: 0 2px 5px black;
 }
 
 .skullVoda{
@@ -502,12 +492,13 @@ a, a{
 .dropdown-content {
     display: none;
     position: absolute;
+    bottom: 50px;
     background-color: #f1f1f1;
     width: 350px;
     border-radius: 4px;
     padding: 12px 16px;
     font-size: 20px;
-    box-shadow: 0px 8px 5px 0px rgba(0,0,0,1);
+    box-shadow: 0 8px 5px -3px rgba(0,0,0,.5);
     z-index: 1;
 }
 
@@ -516,6 +507,12 @@ a, a{
     color: black;
     padding: 12px 16px;
     display: block;
+}
+
+/* Show the dropdown text on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+
 }
 
 .footer{
@@ -527,6 +524,7 @@ a, a{
     justify-content: center;
     align-items: center;
     z-index: -100;
+    box-shadow: 0 -2px 5px rgba(75,75,75,.8);
     background: rgba(100,100,100,.3);
 }
 
@@ -536,12 +534,13 @@ a, a{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: -webkit-linear-gradient(2deg, rgba(15,183,132,.2), rgba(173,255,47,.2), rgba(0,0,0,.2), rgba(0,17,241,.2), rgba(50,205,50,.2));
+    background-image: -webkit-linear-gradient(2deg, rgba(15,15,15,.2), rgba(30,30,30,.2), rgba(0,0,0,.2), rgba(75,75,75,.2), rgba(20,20,20,.2));
     background-size: 400%;
     border-radius: 4px;
-    -webkit-animation:name 10s infinite  ;
-    -moz-animation:name 10s infinite  ;
-    animation: name 10s infinite  ;
+    border: 2px solid black;
+    -webkit-animation:name 4s infinite  ;
+    -moz-animation:name 4s infinite  ;
+    animation: name 4s infinite  ;
 }
 @keyframes name {
     0% {background-position: 0 50%;}
@@ -639,8 +638,4 @@ a, a{
         background: rgba(100,100,100,1);}
 }
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
 
