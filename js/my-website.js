@@ -9,15 +9,6 @@ function myFunction(){
     }
 });
 
-// function myFunction(){
-//     var x = document.getElementById("subH");
-//     if (x.innerHTML === "TO DESIGN"){
-//         x.innerHTML = "TO CODE";
-//     }else{
-//         x.innerHTML = "TO DESIGN";
-//     }
-// }
-
 $("#main-header");
 
 $(".prismGrid").hide();
@@ -33,8 +24,6 @@ $(document).ready(function() {
 $(".main-contain").hide();
 
 $(".b1").click(function() {
-    // $(".prismGrid").animate({right: '300px'});
-    // $(".prismGrid").animate({right: '250px'});
     $(".b1").fadeOut();
 });
 
@@ -45,8 +34,6 @@ $(".b2").click(function() {
 });
 
 $(".b3").click(function() {
-    // $(".prismGrid").animate({left: '300px'});
-    // $(".prismGrid").animate({left: '250px'});
     $(".b3").fadeOut();
 });
 
@@ -55,7 +42,6 @@ $(".b4").click(function() {
     $(".main-contain").slideToggle("slow");
 });
 
-$(".image").hide();
 
 $(".b5").click(function() {
     $(".b5").toggleClass("b5a");
@@ -67,6 +53,7 @@ $(".b6").click(function() {
     $(".b6").toggleClass("b6a");
 });
 
+$(".image").hide();
 $(".image").click(function () {
     $(this).hide();
 });
