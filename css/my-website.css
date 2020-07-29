@@ -100,7 +100,9 @@ p {
     font-family: 'Odibee Sans', cursive;
     font-size: 18px;
 }
-
+.prismWrap, .prismWrap3, .prismWrap4, .prismWrap6{
+    filter: drop-shadow(0 2px 3px rgba(255,255,255,.5));
+}
 .prismGrid{
     position: relative;
     max-width: 600px;
@@ -143,10 +145,7 @@ p {
     70% {clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);}
     100% {clip-path: polygon(-100% 0%, 200% 0%, -100% 100%, 200% 100%);}
 }
-.prismWrap{
-    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
-    border: 5px black;
-}
+
 
 .b1{
     display: flex;
@@ -155,7 +154,7 @@ p {
     grid-area: prism1;
     background: lightgray;
     height: 100px;
-    width: 200px;
+    width: 80%;
     clip-path: polygon(0 40%, 50% 35%, 100% 100%, 20% 80%);
     -webkit-animation:spin1 .8s linear reverse;
     -moz-animation:spin1 .6s linear reverse;
@@ -165,13 +164,8 @@ p {
 @-webkit-keyframes spin1 { 100% { -webkit-transform: rotate(45deg); } }
 @keyframes spin1 { 100% { -webkit-transform: rotate(45deg); transform:rotate(45deg); } }
 .b1a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     grid-area: prism1;
     background: lightgray;
-    height: 100px;
-    width: 200px;
     clip-path: polygon(17% 0, 69% 18%, 100% 100%, 22% 50%);
     -webkit-animation:spin1 .8s linear normal;
     -moz-animation:spin1 .6s linear normal;
@@ -181,9 +175,6 @@ p {
 @-webkit-keyframes spin1 { 100% { -webkit-transform: rotate(45deg); } }
 @keyframes spin1 { 100% { -webkit-transform: rotate(45deg); transform:rotate(45deg); } }
 
-.prismWrap2{
-    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
-}
 
 .b2{
     display: flex;
@@ -191,7 +182,6 @@ p {
     justify-content: center;
     grid-area: prism2;
     background: lightgray;
-    color: silver;
     height: 100px;
     width: 90px;
     clip-path: polygon(50% 100%, 20% 38%, 50% 0, 80% 38%);
@@ -202,7 +192,6 @@ p {
     justify-content: center;
     grid-area: prism2;
     background: lightgray;
-    color: darkgrey;
     height: 100px;
     width: 90px;
     -webkit-animation:polygon2 2s forwards  ;
@@ -235,18 +224,14 @@ p {
     100% {clip-path:polygon(50% 50%, 0% 100%, 50% 0, 100% 100%);}
 }
 
-.prismWrap3{
-    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
-}
 .b3{
     display: flex;
     align-items: center;
     justify-content: center;
     grid-area: prism3;
     background: lightgray;
-    color: silver;
     height: 100px;
-    width: 200px;
+    width: 80%;
     clip-path: polygon(100% 40%, 50% 35%, 0 100%, 80% 80%);
     -webkit-animation:spin3 .6s linear reverse;
     -moz-animation:spin3 .6s linear reverse;
