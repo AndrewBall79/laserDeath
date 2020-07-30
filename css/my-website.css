@@ -11,20 +11,16 @@ body{
     top:10%;
 }
 
-.cursor-wrap{
-    filter: drop-shadow(0 3px 10px white);
-}
-
 .cursor{
     border: 2px dotted red;
     border-radius: 100% 0 100%;
     width: 1rem;
     height: 1rem;
     position: absolute;
+    z-index: 600;
     transform: translate(-50%, -600%) rotate(110deg);
     pointer-events: none;
-    z-index: 400;
-    background: limegreen;
+    background: rgba(255,255,255,.4);
 }
 /*@keyframes cursor-rotate {*/
 /*    0%{*/
