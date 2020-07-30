@@ -12,35 +12,35 @@ function matchHouses(step) {
 
 (function () {
 
-    var mainHeader = document.getElementById("main-header");
+    var numberArray = [];
+    var numberList = document.getElementById("number-list");
     var listener = function (event) {
-        mainHeader.innerText = listOfRollsFromDieFunc();
+        numberList.innerText = listOfRollsFromDieFunc();
+        console.log(numberList);
     };
     document.getElementById('button').addEventListener('click', listener, false);
 
+    // changes the main background of mainHeader when dice are rolled
+    $('#button').click(function () {
+        var boxDiv = 'box' + numberList.innerText;
+        var color = $(boxDiv).css("background-color");
+        $('#main-header1').css('background', color);
+        $(".main-header").css({"font-size": "20px"});
+        // console.log(color);
+    });
 
     //this will eventually do something with the grid, hopefully
 
 
     // dice shaker dice shaker audio
-
     var box = document.getElementById("boox");
     var grid = function (event) {
-        box.id = "boox" + mainHeader.innerText;
+        box.id = "boox" + numberList.innerText;
         $('audio#dice')[0].play();
         // console.log(box.id);
     };
     document.getElementById('button').addEventListener('click', grid, false);
 
-// changes the main background of main-header1 when dice are rolled
-
-
-    $('#button').click(function () {
-        var boxDiv = 'box' + mainHeader.innerText;
-        var color = $(boxDiv).css("background-color");
-        $('#main-header1').css('background', color);
-        console.log(color);
-    });
 
 
 // gets the individual divs to send their colors to the header
@@ -53,31 +53,19 @@ function matchHouses(step) {
     });
 
 
-    //changes font size of the font to be more visible after cli
-
-    $("#button").click(function () {
-        $(".main-header").css({"font-size": "20px"});
-    });
-
-
     //the dice roll function in a nutshell
 
     var numberOfRolls = document.getElementById('mySelect2');
-    // console.log(numberOfRolls);
     var diceFunction = document.getElementById('mySelect');
 
-    // console.log(diceFunction);
     function listOfRollsFromDieFunc() {
         var dieChosen = diceFunction.value;
-        // console.log(dieChosen);
         var rollAmount = numberOfRolls.value;
-        // console.log(rollAmount);
         var diceArray = [];
         for (var i = 0; i < rollAmount; i++) {
             diceArray.push(Math.floor(Math.random() * dieChosen) + 1);
-            console.log(diceArray)
         }
-        // console.log(diceArray);
+        console.log(diceArray);
         return diceArray
     }
 })();
