@@ -12,11 +12,16 @@ function matchHouses(step) {
 
 (function () {
 
+    var html = '';
     var numberArray = [];
     var numberList = document.getElementById("number-list");
     var listener = function (event) {
-        numberList.innerText = listOfRollsFromDieFunc();
-        console.log(numberList);
+        numberArray.push(listOfRollsFromDieFunc());
+        // numberList.innerText = listOfRollsFromDieFunc();
+        for(let i=0; i < numberArray.length;i++){
+            numberList.innerHTML = '<div class="box">'+ numberArray +'</div>'
+        }
+        console.log(numberArray);
     };
     document.getElementById('button').addEventListener('click', listener, false);
 
