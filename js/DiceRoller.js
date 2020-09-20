@@ -1,10 +1,7 @@
-
-
-
 function matchHouses(step) {
-    if (step > 0 ){
-        return (step*5)+1
-    }else {
+    if (step > 0) {
+        return (step * 5) + 1
+    } else {
         return 0
     }
 }
@@ -15,13 +12,11 @@ function matchHouses(step) {
     var html = '';
     var numberArray = [];
     var numberList = document.getElementById("number-list");
+    var total = document.getElementById("number-total");
     var listener = function (event) {
         numberArray.push(listOfRollsFromDieFunc());
-        // numberList.innerText = listOfRollsFromDieFunc();
-        for(let i=0; i < numberArray.length;i++){
-            numberList.innerHTML = '<div class="box">'+ numberArray +'</div>'
-        }
-        console.log(numberArray);
+        total.innerHTML = '<div class"box">' + numberArray.join(numberArray) + "</div>";
+        numberList.innerHTML = '<div class="box">' + numberArray + '</div>';
     };
     document.getElementById('button').addEventListener('click', listener, false);
 
@@ -45,7 +40,6 @@ function matchHouses(step) {
         // console.log(box.id);
     };
     document.getElementById('button').addEventListener('click', grid, false);
-
 
 
 // gets the individual divs to send their colors to the header
