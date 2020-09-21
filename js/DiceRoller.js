@@ -15,8 +15,8 @@ function matchHouses(step) {
     var total = document.getElementById("number-total");
     var listener = function (event) {
         numberArray.push(listOfRollsFromDieFunc());
-        total.innerHTML = '<div class"box">' + numberArray.reduce(function(a, b){
-            return a + b;
+        total.innerHTML = '<div>' + numberArray.reduce(function(a, b){
+            return parseInt(a) + parseInt(b);
         }, 0) + "</div>";
         numberList.innerHTML = '<div class="box">' + numberArray + '</div>';
     };
