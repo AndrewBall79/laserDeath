@@ -15,10 +15,14 @@ function matchHouses(step) {
     var total = document.getElementById("number-total");
     var listener = function (event) {
         numberArray.push(listOfRollsFromDieFunc());
+
+
         total.innerHTML = '<div>' + numberArray.reduce(function(a, b){
             return parseInt(a) + parseInt(b);
         }, 0) + "</div>";
-        numberList.innerHTML = '<div class="box">' + numberArray + '</div>';
+        for (var i = 0 ; i < numberArray.length ; i++ ) {
+            numberList.innerHTML = '<div class="box">' + numberArray + '</div>' ;
+        }
     };
     document.getElementById('button').addEventListener('click', listener, false);
 

@@ -1,0 +1,46 @@
+.right {
+    display: grid;
+    grid-area: right;
+
+}
+.right-container{
+    margin: 10px;
+    background: #888888;
+    border-radius: 4px;
+    width: 90%;
+    box-shadow: 0 2px 10px -5px darkslategray;
+}
+
+.roll-container{
+    display: grid;
+}
+
+
+.rolled-numbers, #number-list, #number-total{
+    font-family: Helvetica, sans-serif;
+    color: whitesmoke;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, .5);;
+    padding: 8px 0 15px 0;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.rolled-numbers{
+    border-radius: 4px 4px 0 0 ;
+    background: grey;
+    box-shadow: 0 2px 5px darkslategrey;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.left-column{
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.right-column{
+    padding: 8px;
+}
+

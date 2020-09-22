@@ -69,25 +69,7 @@ body {
     grid-area: left;
 }
 
-.right {
-    display: grid;
-    grid-area: right;
 
-}
-.right-container{
-
-    margin: 10px;
-    background: #888888;
-    border-radius: 4px;
-    width: 90%;
-    box-shadow: 0 2px 10px -5px darkslategray;
-}
-.rolled-numbers{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
 
 .content {
     display: flex;
@@ -101,7 +83,10 @@ body {
     box-shadow: black 2px 2px 4px;
     height: 200px;
     width: 225px;
-    grid-template-areas: "box1 box2 box3 box4 box5" "box6 box7 box8 box9 box10" "box11 box12 box13 box14 box15" "box16 box17 box18 box19 box20";
+    grid-template-areas:"box1 box2 box3 box4 box5"
+                        "box6 box7 box8 box9 box10"
+                        "box11 box12 box13 box14 box15"
+                        "box16 box17 box18 box19 box20";
 }
 
 .rollDieFunction {
@@ -112,22 +97,7 @@ body {
 }
 
 
-.rolled-numbers, #number-list{
-    font-family: Helvetica, sans-serif;
-    color: whitesmoke;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, .5);;
-    padding: 8px 0 15px 0;
-    font-size: 20px;
-    display: flex;
-    font-weight: 600;
-    justify-content: center;
-    flex-direction: column;
-}
-.rolled-numbers{
-    border-radius: 4px 4px 0 0 ;
-    background: grey;
-    box-shadow: 0 2px 5px darkslategrey;
-}
+
 
 
 
