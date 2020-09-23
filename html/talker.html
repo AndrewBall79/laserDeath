@@ -13,7 +13,7 @@
 <br>
 <br>
 
-<!--UnUsed Inputs for function with talkbox response function-->
+<!--Inputs for function with p and q response-->
 
 <form id="Ps-Qs">
     <label for="userInput1">Enter a P or a Q</label>
@@ -22,6 +22,8 @@
     <button type="submit" id="submit1">submit</button>
 </form>
     <br>
+
+<!--Inputs for function with odd or even response-->
 
 <form id="firstForm">
     <label for="userInput2">Enter A Number</label>
@@ -55,36 +57,17 @@
 
     const speakWords = () => {
         return talkBot('Wop', .6)
-            .then(() => talkBot('ba', .9))
-            .then(() => talkBot('ba', .1))
-            .then(() => talkBot('Loo', .9))
-            .then(() => talkBot('bop', .1))
+            .then(() => talkBot('ba ba', .9))
+            .then(() => talkBot('Loo bop', .9))
             .then(() => talkBot('a wop', .9))
-            .then(() => talkBot('bam', .1))
-            .then(() => talkBot('boom', .9))
+            .then(() => talkBot('bam boom', .1))
     };
 
     $('#talkBot').click(speakWords);
 
 
-    // This is the super FUN P's And Q's game!!!!
 
-
-    // alert('Press Q or P');
-    // $(document).keyup(function (event) {
-    //     console.log(event.keyCode);
-    //     if (event.keyCode === 81) {
-    //         alert("You're A Lefty");
-    //     }
-    //     if (event.keyCode === 80) {
-    //         alert("You're A Righty");
-    //     } else {
-    //         alert('No Really, Press Q or P')
-    //     }
-    // });
-
-
-    // THIS IS THE SUPER FUN TALKING VERSION OF THE GAME!!!
+    // THIS IS THE SUPER FUN "Ps and Qs" THE GAME!!!
 
 
     alert("Play P's And Q's");
@@ -93,25 +76,19 @@
         console.log(event.keyCode);
         if (input === "q") {
             return talkBot("You're", .6)
-                .then(() => talkBot('A', .9))
-                .then(() => talkBot('Lefty', .3))
+                .then(() => talkBot('A Lefty', .9))
         }        if (input === "p") {
             return talkBot("You're", .6)
-                .then(() => talkBot('A', .9))
-                .then(() => talkBot('Righty', .3))
+                .then(() => talkBot('A Righty', .9))
         }else{
             return talkBot("No,", 4)
-                .then(() => talkBot('You', 15))
-                .then(() => talkBot('Must', 4))
-                .then(() => talkBot('press', 15))
-                .then(() => talkBot('P', 4))
-                .then(() => talkBot('or', 15))
-                .then(() => talkBot('Q', 4))
+                .then(() => talkBot('You Must Press P or Q', 15))
+
         }
     });
 
 
-    //not currently working user input with talkBox response
+    // This will tell you if you entered an odd or even number
 
     $("#submit2").click(function (event) {
         let a = $("#userInput2").val();
@@ -129,12 +106,7 @@
 
 
 
-    // Unused MIDI music functions, to be used for future PODS
-
-
-
-
-
+    // Unused MIDI music functions, to be used for future notation coding
 
     var context = null;
     var oscillator = null;
