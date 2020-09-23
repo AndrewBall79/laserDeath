@@ -21,7 +21,7 @@ function matchHouses(step) {
             return parseInt(a) + parseInt(b);
         }, 0) + "</div>";
         for (var i = 0 ; i < numberArray.length ; i++ ) {
-            numberList.innerHTML = '<div class="box">' + numberArray + '</div>' ;
+            numberList.innerHTML = '<div class="box">' + numberArray[i] + '</div>' ;
         }
     };
     document.getElementById('button').addEventListener('click', listener, false);
