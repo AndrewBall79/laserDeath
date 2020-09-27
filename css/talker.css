@@ -1,5 +1,26 @@
 body{
     background: black;
     color: ghostwhite;
+    font-family: 'Press Start 2P', cursive;
 }
 
+.header{
+    text-align: center;
+    border: #3B94D9 2px solid;
+    border-radius: 4px;
+    width: 50%;
+    margin: auto;
+    text-shadow: 0 2px 5px white;
+    animation: headerAn 2s infinite;
+    -moz-animation: headerAni 2s infinite;
+    -webkit-animation: headerAni 2s infinite;
+}
+@keyframes headerAni {
+    0%, 100%{ color: white}
+    50% { color: #3B94D9}
+
+}
+.content{
+    margin: auto;
+    text-align: center;
+}

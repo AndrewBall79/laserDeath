@@ -4,45 +4,67 @@
     <meta charset="UTF-8">
     <title>Pod Exercises</title>
     <link rel="stylesheet" href="../css/talker.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-<h1>POD EXERCISES
-</h1>
 
-<button id="talkBot">SING</button>
-<br>
-<br>
 
-<!--Inputs for function with p and q response-->
+<div class="full-page">
 
-<form id="Ps-Qs">
-    <label for="userInput1">Enter a P or a Q</label>
-    <input type="text" id="userInput1" name="input">
+
+    <div class="header">
+        <h1>Talky The Robot</h1>
+    </div>
     <br>
-    <button type="submit" id="submit1">submit</button>
-</form>
-<br>
-
-<!--Inputs for function with odd or even response-->
-
-<form id="firstForm">
-    <label for="userInput2">Enter A Number</label>
-    <input type="text" id="userInput2" name="input">
-    <br>
-    <button type="submit" id="submit2">submit</button>
-</form>
-<br>
-
-<!--Inputs for function with any user input -->
-
-<form id="userCommand">
-    <label for="userInput3">Talk Talkbot!</label>
-    <input placeholder="hello" type="text" id="userInput3" name="input">
-    <br>
-    <button type="submit" id="submit3">submit</button>
-</form>
 
 
+    <!--    this will make talky sing a preprogrammed song-->
+    <div class="content">
+        <label for="mySelect" class="competent border">Choose a song</label>
+        <br>
+        <select id="mySelect" class="select-css custom-select">
+            <option class="mySelect" value="1">Tutti Frutti</option>
+            <option class="mySelect" value="2">Enter Sandman</option>
+            <option class="mySelect" value="3">Enjoy The Silence</option>
+            <option class="mySelect" value="4">4</option>
+            <option class="mySelect" value="5">5</option>
+            <option class="mySelect" value="6">6</option>
+        </select>
+        <br>
+        <button id="talkBot">SING</button>
+        <br>
+        <!--Inputs for function with p and q response-->
+
+        <form id="Ps-Qs">
+            <label for="userInput1">Enter a P or a Q</label>
+            <input type="text" id="userInput1" name="input">
+            <br>
+            <button type="submit" id="submit1">submit</button>
+        </form>
+        <br>
+
+        <!--Inputs for function with odd or even response-->
+
+        <form id="firstForm">
+            <label for="userInput2">Enter A Number</label>
+            <input type="text" id="userInput2" name="input">
+            <br>
+            <button type="submit" id="submit2">submit</button>
+        </form>
+        <br>
+
+        <!--Inputs for function with any user input -->
+
+        <form id="userCommand">
+            <label for="userInput3">Talk Talkbot!</label>
+            <input placeholder="hello" type="text" id="userInput3" name="input">
+            <br>
+            <button type="submit" id="submit3">submit</button>
+        </form>
+    </div>
+
+
+</div>
 
 <ul id="midi-list">
 

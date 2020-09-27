@@ -12,14 +12,34 @@ function talkBot(words, pitch) {
 
 //This is the first talkBot with onClick function
 
-const speakWords = () => {
-    return talkBot('Wop', .6)
-        .then(() => talkBot('ba ba', .9))
-        .then(() => talkBot('Loo bop', .9))
-        .then(() => talkBot('a wop', .9))
-        .then(() => talkBot('bam boom', .1))
-};
-$('#talkBot').click(speakWords);
+
+$('#talkBot').click(event => {
+    let input = $("#mySelect").val();
+    console.log(input);
+    if (input === "1") {
+        return talkBot('Wop', .6)
+            .then(() => talkBot('ba ba', .9))
+            .then(() => talkBot('Loo bop', .9))
+            .then(() => talkBot('a wop', .9))
+            .then(() => talkBot('bam boom', .1))
+    }
+    if (input === "2"){
+        return talkBot('Enter Night', .6)
+            .then(() => talkBot('Exit Light', .9))
+            .then(() => talkBot('Take My Hand', .9))
+            .then(() => talkBot("We're off to never never land", .9))
+            .then(() => talkBot("That's right", .1))
+    }
+    if (input === "3"){
+        return talkBot('Words like violence', .6)
+            .then(() => talkBot('Break the silence', .9))
+            .then(() => talkBot('Come crashing in', .9))
+            .then(() => talkBot("Into my little world", .9))
+    }
+    else {
+        return talkBot("I don't know that one", 1)
+    }
+});
 
 
 // THIS IS THE SUPER FUN "Ps and Qs" THE GAME!!!
@@ -64,6 +84,8 @@ $("#submit3").click(function (event) {
     event.preventDefault();
     return talkBot(a, 1);
 });
+
+
 
 
 // Unused MIDI music functions, to be used for future notation coding
