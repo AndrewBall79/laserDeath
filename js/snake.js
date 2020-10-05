@@ -1,11 +1,11 @@
 const BG_COLOR = '#231f20';
-const SNAKE_COLOR =  '#c2c2c2';
+const SNAKE_COLOR =  'blue';
 const FOOD_COLOR = '#e66916';
 
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
-canvas.width = canvas.height = 400;
+canvas.width = canvas.height = 800;
 
 const FR = 10;
 const S = 20;
@@ -18,8 +18,8 @@ function init() {
     vel = {x: 0, y: 0};
 
     snake = [
-        {x:8, y: 10},
-        {x:9, y: 10},
+        {x:10, y: 10},
+        {x:10, y: 10},
         {x:10, y: 10}
     ];
     randomFood();
@@ -60,7 +60,7 @@ function keydown(e) {
 
 setInterval(() => {
     requestAnimationFrame(gameLoop)
-}, 1000 / FR);
+}, 700 / FR);
 
 function gameLoop() {
     ctx.fillStyle = BG_COLOR;
