@@ -1,5 +1,5 @@
 const BG_COLOR = '#231f20';
-const SNAKE_COLOR =  'blue';
+const SNAKE_COLOR =  '#c2c2c2';
 const FOOD_COLOR = '#e66916';
 
 const canvas = document.getElementById('canvas');

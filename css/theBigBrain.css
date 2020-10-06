@@ -1,0 +1,51 @@
+body{
+    background: black;
+    margin: 0;
+}
+
+.container{
+    height: 90%;
+    width: 90%;
+    text-align: center;
+}
+
+.header{
+    font-family: "Arial Black";
+    font-size: 50px;
+    height: 100px;
+    margin: auto;
+    background: grey;
+    color: black;
+    text-align: center;
+    text-shadow: 0 2px 3px ghostwhite;
+}
+
+.title{
+    height: 25px;
+    text-align: center;
+    color: #3B94D9;
+    background: #282c34;
+    padding: 50px;
+}
+.main{
+    height: 50px;
+    text-align: left;
+    color: #282c34;
+    background: black;
+}
+
+.data{
+    height: 25px;
+    background: black;
+    color: ghostwhite;
+}
+
+.footer{
+    height: 100px;
+    background: grey;
+    color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-shadow: 0 2px 3px ghostwhite;
+}
