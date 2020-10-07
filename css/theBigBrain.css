@@ -1,6 +1,6 @@
 body{
     background: black;
-    margin: 0;
+    margin: 5px;
 }
 
 .container{
@@ -10,7 +10,7 @@ body{
 }
 
 .header{
-    font-family: "Arial Black";
+    font-family: "Arial Black", sans-serif;
     font-size: 50px;
     height: 100px;
     margin: auto;
@@ -38,6 +38,10 @@ body{
     height: 25px;
     background: black;
     color: ghostwhite;
+}
+
+#canvas{
+    border: orange 2px solid;
 }
 
 .footer{
