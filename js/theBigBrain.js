@@ -6,7 +6,11 @@ const c = canvas.getContext('2d');
 canvas.width = innerWidth;
 canvas.height = innerHeight;
 
-const scoreEl = document.querySelector('#scoreEl')
+const scoreEl = document.querySelector('#scoreEl');
+const startGameBtn = document.querySelector('#startGameBtn');
+const modalEl = document.querySelector('#modalEl');
+const bigScoreEl = document.querySelector('#bigScoreEl');
+
 
 class Player {
     constructor(x, y, radius, color) {
@@ -15,7 +19,6 @@ class Player {
         this.radius = radius;
         this.color = color;
     }
-
     draw() {
         c.beginPath();
         c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false)
@@ -100,10 +103,20 @@ class Particle {
 const x = canvas.width / 2;
 const y = canvas.height / 2;
 
-const player = new Player(x, y, 10, 'white');
-const projectiles = [];
-const enemies = [];
-const particles = [];
+let player = new Player(x, y, 10, 'white');
+let projectiles = [];
+let enemies = [];
+let particles = [];
+
+function init() {
+    player = new Player(x, y, 10, 'white');
+    projectiles = [];
+    enemies = [];
+    particles = [];
+    score = 0;
+    scoreEl.innerHTML = score;
+    bigScoreEl.innerHTML = score;
+}
 
 function spawnEnemies() {
     setInterval(() => {
@@ -130,6 +143,7 @@ function spawnEnemies() {
 }
 
 let animationId;
+let score = 0;
 function animate() {
     animationId = requestAnimationFrame(animate);
     c.fillStyle = 'rgba(0,0,0,.1)';
@@ -163,7 +177,10 @@ function animate() {
         const dist = Math.hypot(player.x - enemy.x, player.y - enemy.y);
         //end game
         if (dist - enemy.radius - player.radius < 1) {
-            cancelAnimationFrame(animationId)
+            cancelAnimationFrame(animationId);
+            modalEl.style.display = 'flex';
+            bigScoreEl.innerHTML = score;
+
         }
 
 
@@ -188,6 +205,12 @@ function animate() {
                     )
                 }
                 if (enemy.radius - 10 > 5) {
+
+                    // increase score
+                    score += 100;
+                    scoreEl.innerHTML = score;
+
+
                     gsap.to(enemy, {
                         radius: enemy.radius - 10
                     });
@@ -196,6 +219,9 @@ function animate() {
                     }, 0);
 
                 } else {
+                    // remove enemy
+                    score += 250;
+                    scoreEl.innerHTML = score;
                     setTimeout(() => {
                         enemies.splice(index, 1);
                         projectiles.splice(projectileIndex, 1);
@@ -223,5 +249,9 @@ addEventListener('click', (event) => {
 
 });
 
-animate();
-spawnEnemies();
+startGameBtn.addEventListener('click', () => {
+    init();
+    animate();
+    spawnEnemies();
+    modalEl.style.display = 'none'
+});

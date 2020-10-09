@@ -8,5 +8,6 @@
     <orderEntry type="library" name="all" level="application" />
     <orderEntry type="library" name="jquery-3.5.1.slim" level="application" />
     <orderEntry type="library" name="kursor" level="application" />
+    <orderEntry type="library" name="gsap" level="application" />
   </component>
 </module>
