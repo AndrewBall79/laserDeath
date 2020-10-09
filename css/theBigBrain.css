@@ -43,6 +43,12 @@ body{
 #canvas{
     border: orange 2px solid;
 }
+.score{
+    position: fixed;
+    user-select: none;
+    color: ghostwhite;
+    z-index: 100;
+}
 
 .footer{
     height: 100px;
