@@ -16,7 +16,7 @@ var noise = x=>{
     return lerp(perm[Math.floor(x)], perm[Math.ceil(x)], x - Math.floor(x));
 };
 
-var player = new function () {
+var player = new function() {
     this.x = c.width/2;
     this.y = 0;
     this.ySpeed = 0;
@@ -25,7 +25,7 @@ var player = new function () {
 
     this.img = new Image();
     this.img.src = "../images/SVG-Path/moto.png";
-    this.draw = function () {
+    this.draw = function (){
         var p1 = c.height - noise(t + this.x) * 0.25;
         var p2 = c.height - noise(t+5 + this.x) * 0.25;
 
@@ -52,7 +52,7 @@ var player = new function () {
             this.rot -= (this.rot - angle) * 0.5;
             this.rSpeed = this.rSpeed - (angle - this.rot);
         }
-        this.rSpeed += (k.ArrowLeft - k.ArrowRight) * 0.5;
+        this.rSpeed += (k.ArrowLeft - k.ArrowRight) * 0.05;
         this.rot -= this.rSpeed * 0.1;
         if(this.rot > Math.PI) this.rot = -Math.PI;
         if(this.rot < -Math.PI) this.rot = Math.PI;
