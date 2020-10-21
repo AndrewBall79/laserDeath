@@ -1,3 +1,19 @@
+var cGrad = document.getElementById("canvas");
+var ctxGrad = cGrad.getContext("2d");
+
+cGrad.width = innerWidth;
+cGrad.height = 500;
+
+// Create gradient
+var grd = ctxGrad.createRadialGradient(500, 250, 50, 500, 100, 600,);
+grd.addColorStop(0, "rgba(255,150,150,1)");
+grd.addColorStop(1, "rgba(100,120,255,.5)");
+
+// Fill with gradient
+ctxGrad.fillStyle = grd;
+ctxGrad.fillRect(200, 0, innerWidth, 500);
+
+
 var c = document.getElementById("canvas");
 
 var ctx = c.getContext('2d');
@@ -23,7 +39,7 @@ var t = 0;
 
 function loop() {
     t += 2;
-    ctx.fillStyle = "rgb(125,155,180)";
+    ctx.fillStyle = grd;
     ctx.fillRect(0, 0, c.width, c.height);
     ctx.fillStyle = "rgb(255,255,255)";
     ctx.beginPath();
@@ -155,16 +171,3 @@ function loop4() {
 }
 
 loop4();
-
-
-var c5 = document.getElementById("canvas");
-var ctx5 = c5.getContext('2d');
-ctx5.font = "30px Comic Sans MS";
-ctx5.fillStyle = "red";
-ctx5.textAlign = "center";
-ctx5.fillText("Hello World", c5.width/2, c5.height/2);
-
-c5.width = innerWidth;
-c5.height = 500;
-
-document.body.appendChild(c5);
