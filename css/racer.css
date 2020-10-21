@@ -1,0 +1,18 @@
+#canvas{
+}
+
+.header{
+    font-family: Andale Mono, monospace;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    z-index: 100;
+    font-size: 120px;
+    color: rgba(0,0,0,.01);
+}
+@supports (-webkit-text-stroke: 1px black) {
+    .header {
+        -webkit-text-stroke: 1px black;
+        -webkit-text-fill-color: rgba(0,0,0,.3);
+    }
+}
