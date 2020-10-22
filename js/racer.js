@@ -5,8 +5,8 @@ cGrad.width = innerWidth;
 cGrad.height = 500;
 
 // Create gradient
-var grd = ctxGrad.createRadialGradient(500, 250, 50, 500, 100, 600,);
-grd.addColorStop(0, "rgba(255,150,150,1)");
+var grd = ctxGrad.createRadialGradient(500, 250, 50, 500, 200, 600,);
+grd.addColorStop(0, "rgba(255,220,220,1)");
 grd.addColorStop(1, "rgba(100,120,255,.5)");
 
 // Fill with gradient
@@ -171,3 +171,41 @@ function loop4() {
 }
 
 loop4();
+
+var c5 = document.getElementById("canvas");
+var ctx5 = c5.getContext('2d');
+
+c5.width = innerWidth;
+c5.height = 500;
+
+document.body.appendChild(c5);
+
+var perm5 = [];
+let val5;
+while (perm5.length < 255) {
+    while (perm5.includes(val5 = Math.floor(Math.random() * 255))) ;
+    perm5.push(val5);
+}
+var lerp5 = (a, b, t) => a + (b - a) * (1 - Math.cos(t * Math.PI)) / 2;
+var noise5 = x => {
+    x = x * 0.01 % 200;
+    return lerp5(perm5[Math.floor(x)], perm5[Math.ceil(x)], x - Math.floor(x));
+};
+
+var t5 = 0;
+
+function loop5() {
+    t5 += 6;
+    ctx5.fillStyle = "rgba(0,0,0,.01)";
+    ctx5.fillRect(0, 0, c5.width, c5.height);
+    ctx5.fillStyle = "rgb(160,160,160)";
+    ctx5.beginPath();
+    ctx5.moveTo(0, c5.height);
+    for (let i = 0; i < c5.width; i++)
+        ctx5.lineTo(i, c5.height - noise5(t5 + i) * 0.2 + -160);
+    ctx5.lineTo(c5.width, c5.height);
+    ctx5.fill();
+    requestAnimationFrame(loop5);
+}
+
+loop5();
