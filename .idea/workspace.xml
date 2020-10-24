@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7966e01b-a893-49bb-abfc-9ee2e5b4d2db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my-app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/App.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/reportWebVitals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/setupTests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SLJ.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/SLJ.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weatherMap.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/weatherMap.html" afterDir="false" />
-    </list>
+    <list default="true" id="7966e01b-a893-49bb-abfc-9ee2e5b4d2db" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,7 +92,7 @@
       <workItem from="1602622590001" duration="13320000" />
       <workItem from="1603232381947" duration="11992000" />
       <workItem from="1603331092606" duration="3930000" />
-      <workItem from="1603543231123" duration="2487000" />
+      <workItem from="1603543231123" duration="2682000" />
     </task>
     <servers />
   </component>
