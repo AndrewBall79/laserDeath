@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7966e01b-a893-49bb-abfc-9ee2e5b4d2db" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/snake.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/snake.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +55,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/html" />
     </key>
   </component>
@@ -95,7 +96,9 @@
       <workItem from="1602622590001" duration="13320000" />
       <workItem from="1603232381947" duration="11992000" />
       <workItem from="1603331092606" duration="3930000" />
-      <workItem from="1603543231123" duration="2863000" />
+      <workItem from="1603543231123" duration="4536000" />
+      <workItem from="1603655725852" duration="494000" />
+      <workItem from="1603837875775" duration="283000" />
     </task>
     <servers />
   </component>
@@ -106,18 +109,14 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="13" y="203" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595000261609">
-      <screen x="0" y="23" width="1920" height="1057" />
-    </state>
-    <state x="13" y="203" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1057@0.23.1920.1057" timestamp="1595000261609" />
     <state x="240" y="362" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601586791904">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="240" y="362" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.1057@0.23.1920.1057" timestamp="1601586791904" />
-    <state x="802" y="373" key="com.intellij.ide.util.TipDialog" timestamp="1603558266953">
+    <state x="802" y="373" key="com.intellij.ide.util.TipDialog" timestamp="1603837938388">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="802" y="373" key="com.intellij.ide.util.TipDialog/0.23.1920.1057@0.23.1920.1057" timestamp="1603558266953" />
+    <state x="802" y="373" key="com.intellij.ide.util.TipDialog/0.23.1920.1057@0.23.1920.1057" timestamp="1603837938388" />
     <state x="119" y="200" width="884" height="708" key="find.popup" timestamp="1603235625763">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
