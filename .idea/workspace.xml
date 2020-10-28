@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="7966e01b-a893-49bb-abfc-9ee2e5b4d2db" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/gradient.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/gradient.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/talker.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/talker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new-reactor.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +30,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="PackageJsonUpdateNotifier">
-    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectId" id="1evBERA3TX6L70A7vauOpdC643v" />
   <component name="ProjectLevelVcsManager">
@@ -54,8 +56,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/html" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/html" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -98,7 +100,7 @@
       <workItem from="1603543231123" duration="4536000" />
       <workItem from="1603655725852" duration="494000" />
       <workItem from="1603837875775" duration="283000" />
-      <workItem from="1603842642972" duration="730000" />
+      <workItem from="1603842642972" duration="2369000" />
     </task>
     <servers />
   </component>

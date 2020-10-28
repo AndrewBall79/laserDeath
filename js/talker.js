@@ -45,11 +45,11 @@ $('#talkBot').click(event => {
 // THIS IS THE SUPER FUN "Ps and Qs" THE GAME!!!
 
 
-$("#submit1").click(event => {
+$("#submit1").click(function (event) {
     let input = $("#userInput1").val();
-    console.log(event.keyCode);
+    event.preventDefault();
     if (input === "q") {
-        return talkBot("You're a a a lefty", .6)
+        return talkBot("You're a lefty", .6)
     }
     if (input === "p") {
         return talkBot("You're A Righty", .6)
@@ -64,7 +64,6 @@ $("#submit1").click(event => {
 $("#submit2").click(function (event) {
     let a = $("#userInput2").val();
     event.preventDefault();
-    console.log(a);
     if (a === '' || isNaN(parseInt(a))) {
         return talkBot('Enter a number', 1)
     }

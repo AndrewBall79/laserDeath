@@ -1,11 +1,12 @@
 body {
     background: black;
+    overflow: hidden;
 }
 
 .planetary-mind{
     position: absolute;
     top: 45%;
-    left: 32%;
+    left: 27%;
     /*font-family: 'Michroma', sans-serif;*/
     font-family: 'Notable', sans-serif;
     /*font-family: 'Press Start 2P', cursive;*/
@@ -44,7 +45,7 @@ body {
     width: 200px;
     z-index: 600;
     top: 40%;
-    left: 45%;
+    left: 40%;
     -webkit-animation: forefrontAni 20s ease infinite, glow1 10s normal infinite;
     -moz-animation: forefrontAni 20s ease infinite, glow1 10s normal infinite;
     animation: forefrontAni 20s ease infinite, glow1 10s normal infinite;
@@ -356,6 +357,6 @@ body {
 }
 
 a{
-    font-family: Helvetica, sans-serif;
+    font-family: Impact, sans-serif;
     text-decoration: none;
 }
