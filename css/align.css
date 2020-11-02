@@ -1,5 +1,5 @@
 body{
-    background: ghostwhite;
+    background: rgba(0,150,0,.1);
 }
 
 canvas {
@@ -45,6 +45,7 @@ canvas {
 }
 #quote{
     margin: 20px;
+    text-transform: uppercase;
 
 }
 #author{
@@ -53,4 +54,5 @@ canvas {
     margin: auto;
     font-size: 20px;
     border-radius: 6px;
+    text-transform: uppercase;
 }
