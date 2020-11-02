@@ -3,26 +3,25 @@ var ctxGrad = cGrad.getContext("2d");
 
 cGrad.width = innerWidth - 500;
 cGrad.height = 500;
-var pos = -600;
+var posH = -600;
+var posV = 200;
 
+var id = setInterval(frame, 1);
 function frame() {
+        if (posH == innerWidth + 500) {
+            posH = -600;
 
-    var id = setInterval(frame, 1);
-    function frame() {
-        if (pos == innerWidth + 500) {
-            pos = -600;
         } else {
-            pos++;
+            posH+= .5;
+
         }
-        var grd = ctxGrad.createRadialGradient(pos, 250, 50, pos, 200, 500);
+        var grd = ctxGrad.createRadialGradient(posH, posV, 50, posH, posV, 500);
         grd.addColorStop(0, "rgba(255,220,220,1)");
-        grd.addColorStop(1, "rgba(100,120,255,.5)");
+        grd.addColorStop(1, "rgba(50,100,200,.5)");
 // Fill with gradient
         ctxGrad.fillStyle = grd;
         ctxGrad.fillRect(200, 0, innerWidth, 500);
-    }
 }
-
 frame();
 
 var c = document.getElementById("canvas");
