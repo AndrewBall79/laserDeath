@@ -6,7 +6,7 @@ request.send();
 
 
 const url = "https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?";
-setInterval(generateQuote, 2);
+setInterval(generateQuote, 1000);
 function generateQuote() {
     fetch(url)
         .then(function (data) {
