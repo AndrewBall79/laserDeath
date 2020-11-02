@@ -40,7 +40,17 @@ canvas {
     background: #888888;
     box-shadow:  0 5px 10px -5px black;
     text-align: center;
-    font-size: 50px;
-    color: grey;
-    text-shadow: 0 0 3px #282c34;
+    font-size: 25px;
+    color: black;
+}
+#quote{
+    margin: 20px;
+
+}
+#author{
+    position:absolute;
+    left: 0; bottom: 15px; right: 0;
+    margin: auto;
+    font-size: 20px;
+    border-radius: 6px;
 }

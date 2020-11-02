@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7966e01b-a893-49bb-abfc-9ee2e5b4d2db" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/js/align2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/align.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/align.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/racer.html" beforeDir="false" afterPath="$PROJECT_DIR$/align.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/align.html" beforeDir="false" afterPath="$PROJECT_DIR$/align.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/align.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/align.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +99,8 @@
       <workItem from="1603655725852" duration="494000" />
       <workItem from="1603837875775" duration="283000" />
       <workItem from="1603842642972" duration="2718000" />
-      <workItem from="1603923793508" duration="2231000" />
+      <workItem from="1603923793508" duration="2399000" />
+      <workItem from="1604200342242" duration="5209000" />
     </task>
     <servers />
   </component>
