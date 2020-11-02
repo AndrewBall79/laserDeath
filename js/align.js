@@ -1,18 +1,29 @@
 var cGrad = document.getElementById("canvas");
 var ctxGrad = cGrad.getContext("2d");
 
-cGrad.width = innerWidth;
+cGrad.width = innerWidth - 500;
 cGrad.height = 500;
+var pos = -600;
 
-// Create gradient
-var grd = ctxGrad.createRadialGradient(500, 250, 50, 500, 200, 600,);
-grd.addColorStop(0, "rgba(255,220,220,1)");
-grd.addColorStop(1, "rgba(100,120,255,.5)");
+function frame() {
 
+    var id = setInterval(frame, 1);
+    function frame() {
+        if (pos == innerWidth + 500) {
+            pos = -600;
+        } else {
+            pos++;
+        }
+        var grd = ctxGrad.createRadialGradient(pos, 250, 50, pos, 200, 500);
+        grd.addColorStop(0, "rgba(255,220,220,1)");
+        grd.addColorStop(1, "rgba(100,120,255,.5)");
 // Fill with gradient
-ctxGrad.fillStyle = grd;
-ctxGrad.fillRect(200, 0, innerWidth, 500);
+        ctxGrad.fillStyle = grd;
+        ctxGrad.fillRect(200, 0, innerWidth, 500);
+    }
+}
 
+frame();
 
 var c = document.getElementById("canvas");
 
@@ -39,7 +50,6 @@ var t = 0;
 
 function loop() {
     t += 2;
-    ctx.fillStyle = grd;
     ctx.fillRect(0, 0, c.width, c.height);
     ctx.fillStyle = "rgb(255,255,255)";
     ctx.beginPath();
@@ -81,8 +91,6 @@ var t2 = 0;
 
 function loop2() {
     t2 += 3;
-    ctx2.fillStyle = "rgba(0,0,0,.01)";
-    ctx2.fillRect(0, 0, c2.width, c2.height);
     ctx2.fillStyle = "rgb(225,225,225)";
     ctx2.beginPath();
     ctx2.moveTo(0, c2.height);
@@ -119,8 +127,6 @@ var t3 = 0;
 
 function loop3() {
     t3 += 4;
-    ctx3.fillStyle = "rgba(0,0,0,.01)";
-    ctx3.fillRect(0, 0, c3.width, c3.height);
     ctx3.fillStyle = "rgb(200,200,200)";
     ctx3.beginPath();
     ctx3.moveTo(0, c3.height);
@@ -157,8 +163,6 @@ var t4 = 0;
 
 function loop4() {
     t4 += 5;
-    ctx4.fillStyle = "rgba(0,0,0,.01)";
-    ctx4.fillRect(0, 0, c4.width, c4.height);
     ctx4.fillStyle = "rgb(180,180,180)";
     ctx4.beginPath();
     ctx4.moveTo(0, c4.height);

@@ -46,7 +46,7 @@ canvas {
 #quote{
     margin: 20px;
     text-transform: uppercase;
-
+    text-align: left;
 }
 #author{
     position:absolute;
