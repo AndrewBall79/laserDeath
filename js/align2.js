@@ -6,7 +6,7 @@ request.send();
 
 
 const url = "https://api.quotable.io/random";
-setInterval(generateQuote, 8000);
+setInterval(generateQuote, 10000);
 function generateQuote() {
     fetch(url)
         .then(function (data) {

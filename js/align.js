@@ -12,7 +12,7 @@ function frame() {
             posH = -600;
 
         } else {
-            posH+= .5;
+            posH += .3;
 
         }
         var grd = ctxGrad.createRadialGradient(posH, posV, 50, posH, posV, 500);
