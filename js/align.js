@@ -6,14 +6,12 @@ cGrad.height = 500;
 var posH = -600;
 var posV = 200;
 
-var id = setInterval(frame, 1);
+var id = setInterval(frame, .5);
 function frame() {
         if (posH == innerWidth + 500) {
             posH = -600;
-
         } else {
-            posH += .3;
-
+            posH += .5;
         }
         var grd = ctxGrad.createRadialGradient(posH, posV, 50, posH, posV, 500);
         grd.addColorStop(0, "rgba(255,220,220,1)");

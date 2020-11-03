@@ -5,16 +5,18 @@ request.open("GET", "");
 request.send();
 
 
-const url = "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1";
-setInterval(generateQuote, 10000);
+const url = "https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand\n";
+setInterval(generateQuote, 5000);
 function generateQuote() {
+    let dataNum = Math.floor(Math.random() * 10);
     fetch(url)
         .then(function (data) {
             return data.json();
         })
         .then(function (data) {
-            document.getElementById("quote").innerHTML = data.content;
-            document.getElementById("author").innerHTML = "- " + data.author;
+            console.log(data);
+            document.getElementById("quote").innerHTML = data[dataNum].content.rendered;
+            document.getElementById("author").innerHTML = "- " + data[dataNum].title.rendered;
         })
         .catch(function (err) {
             console.log(err);
