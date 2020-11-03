@@ -5,8 +5,8 @@ request.open("GET", "");
 request.send();
 
 
-const url = "https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?";
-setInterval(generateQuote, 1000);
+const url = "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1";
+setInterval(generateQuote, 10000);
 function generateQuote() {
     fetch(url)
         .then(function (data) {
