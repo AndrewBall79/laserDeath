@@ -6,7 +6,7 @@ request.send();
 
 
 const url = "https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand\n";
-setInterval(generateQuote, 1000);
+setInterval(generateQuote, 10000);
 function generateQuote() {
     let dataNum = Math.floor(Math.random() * 10);
     if(dataNum == 4 || dataNum == 6){
